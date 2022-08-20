@@ -23,4 +23,19 @@ for (let button of buttons) {
 
 function playGame(playerChoice) {
 playerImage.src = `assets/images${choices[playerChoice]}.png`;
+playerImage.alt = choices[playerChoice];
+
+let computerChoice = Math.floor(Math.random() *5);
+
+computerImage.src = `assets/images${choices[computerChoice]}.png`;
+computerImage.alt = choices[computerChoice];
+
+let result = checkWinner(choices[playerChoice]), choices[computerChoice];
+
+updateScore(result);
+
 }
+
+/**
+ * Check to see who the winners is. Pass 2 strings ....
+ */
