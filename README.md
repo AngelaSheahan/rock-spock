@@ -16,7 +16,12 @@ As a user, I want to click on a button so as to make a choice.
 - Add a 'click' event listener to each button.
      <br/>
 
-As a user, when I click on the button, I want a hand picture of my choice to appear in the game window.
+As a user, I want to be able to read Games Rules on the screen
+- Add a table of rules at the bottom of the screen.
+     <br/>
+
+
+As a user, when I click on the button, I want a hand picture of my choice to appear in the game window
 - Associate each button with the correct hand image.
 - Images of all hand images disappear from game window.
 - Hand image of choice appears in game window.
