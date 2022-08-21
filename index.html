@@ -1,47 +1,43 @@
-!
 <!DOCTYPE html>
-! <html lang="en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheet" href="assets/game.css">
     <title>Rock Spock</title>
+    <script src="assets/game.js"></script>
 </head>
-
 <body>
     <header>
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
     </header>
     <section class="game-area">
-        <div></div>
-        <label for="fname">Enter Your First name here:</label>
-        <input type="text" id="fname" name="fname">
-        <p>Make a Choice:</p>
-        <button aria-label="Rock" data-choice="0" class="control">Rock</button>
-        <button aria-label="Paper" data-choice="1" class="control">Paper</button>
-        <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
-        <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
-        <button aria-label="Spock" data-choice="4" class="control">Spock</button>
-
-        <div class="player">
-            <h3 class="scores">input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span></h3>
-            <img id="player-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
-        </div>
-
-        <div class="computer">
-            <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
-            <img id="computer-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
-        </div>
-
+        <div>
+            <form name="myform" action="">
+                Enter name: <input type="text" name="player" />
+                <input type="button" value="PLAY" onclick="SavePlayerName();" />
+                <input type="button" value="GET" onclick="GetPlayerName();" />
+            </form>
+            <p>Make a Choice:</p>
+            <button aria-label="Rock" data-choice="0" class="control">Rock</button>
+            <button aria-label="Paper" data-choice="1" class="control">Paper</button>
+            <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
+            <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
+            <button aria-label="Spock" data-choice="4" class="control">Spock</button>
+            <div class="player">
+                <h3 class="scores"><input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span>
+                </h3>
+                <img id="player-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
+            </div>
+            <div class="computer">
+                <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
+                <img id="computer-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
+            </div>
     </section>
     <footer>
         <h3>Rules</h3>
         <p></p>
     </footer>
-
-
-    </body>
-
+</body>
 </html>
