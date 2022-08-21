@@ -1,7 +1,3 @@
-
-const playerScore = document.getElementById("player-score");
-const computerScore = document.getElementById("computer-score");
-const messgaes = document.getElementById("messages");
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 function onLoad() {
@@ -16,24 +12,21 @@ function onLoad() {
 
 /** Creates cookie to store player name. If player name not added and PLAY buttonn clicked, Alert msg appears */
 
-// to keep the player name
-var playerName;
-
 // set player name
-function SetPlayerName() {
+function setPlayerName() {
     if (document.myform.player.value == "") {
         alert("Enter your first name");
         return;
     }
     // Cookies are saved in name-value pairs
     setCookie("player", document.myform.player.value, 1)
-    // playerName = document.myform.player.value;
 }
 
 // get player name
-function GetPlayerName() {
-    // alert(playerName);
-    alert(getCookie("player"));
+function getPlayerName() {
+    let player = getCookie("player");
+    console.log(player);
+    return player;
 }
 
 // copied setCookie from w3schools
@@ -73,19 +66,42 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[playerChoice],
+    if (choices[playerChoice] == choices[computerChoice]) {
+        alert("try again");
+        return;
+    }
+
+    let winner = getWinner(choices[playerChoice],
         choices[computerChoice]);
 
-    updateScore(result);
+    updateScore(winner);
 }
 
-// Check to see who the winners is.
-function checkWinner(playerChoice, computerChoice) {
+// See who the winners is.
+function getWinner(playerChoice, computerChoice) {
     console.log("player choice: ", playerChoice, " computer choice: ", computerChoice);
-    return "computer"
+    if (playerChoice === "Scissors" && (computerChoice == "Paper" || computerChoice == "Lizard")) {
+        return "player";
+    }
+    if (playerChoice === "Paper" && (computerChoice === "Rock" || computerChoice === "Spock")) {
+        return "player";
+    }
+    if (playerChoice === "Rock" && (computerChoice === "Lizard" || computerChoice === "Scissors")) {
+        return "player";
+    }
+    if (playerChoice === "Lizard" && (computerChoice === "Spock" || computerChoice === "Paper")) {
+        return "player";
+    }
+    if (playerChoice === "Spock" && (computerChoice === "Scissors" || computerChoice === "Rock")) {
+        return "player";
+    }
+    return "computer";
 }
 
 // Update the winners score.
-function updateScore(result) {
-    console.log("winner : ", result);
+function updateScore(winner) {
+    console.log("winner : ", winner)
+    document.getElementById("messages").textContent = ((winner === "computer") ? "computer" : getPlayerName()) + " wins";
+    let oldScore = parseInt(document.getElementById(winner + "-score").textContent);
+    document.getElementById(winner + "-score").textContent = oldScore + 1;
 }

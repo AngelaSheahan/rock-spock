@@ -16,9 +16,12 @@
     </header>
     <section class="game-area">
         <div>
+            <h3><span id="messages"></span></h3>
+        </div>
+        <div>
             <form name="myform" action="">
                 Enter name: <input type="text" name="player" />
-                <input type="button" value="PLAY" onclick="SetPlayerName();" />
+                <input type="button" value="PLAY" onclick="setPlayerName();" />
             </form>
             <p>Make a Choice:</p>
             <button id="rock" aria-label="Rock" data-choice="0" class="controls">Rock</button>
