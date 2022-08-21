@@ -1,8 +1,7 @@
 /**
- * Declare all DOM Elements 
+ * Declare all DOM Elements
  * */
-
-const buttons = document.getElementsByClassName("controls");
+const controls = document.getElementsByClassName("controls");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
@@ -24,6 +23,7 @@ function SavePlayerName() {
     setCookie("player", document.myform.player.value, 1)
     // playerName = document.myform.player.value;
 }
+
 //test to get player name
 function GetPlayerName() {
     // alert(playerName);
@@ -60,8 +60,34 @@ function getCookie(cname) {
 /**
  * Add EventListeners to all Buttons
  */
-for (let button of buttons) {
-    button.addEventListener("click", function () {
+console.log("found ", controls.length, " controls");
+// some problem with getElementsByClassName means length is 0
+if (controls.length) {
+    for (let control of controls) {
+        console.log("adding event listener for ", control);
+        button.addEventListener("click", function () {
+            let playerChoice = this.getAttribute("data-choice");
+            playGame(playerChoice);
+        });
+    }
+} else {
+    document.getElementById("rock").addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
+    });
+    document.getElementById("paper").addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
+    });
+    document.getElementById("scissors").addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
+    });
+    document.getElementById("lizzard").addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
+    });
+    document.getElementById("spock").addEventListener("click", function () {
         let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
@@ -89,6 +115,6 @@ function checkWinner(playerChoice, computerChoice) {
 }
 
 // Update the winners score.
-function updateScore(result){
+function updateScore(result) {
     console.log("winner : ", result);
 }
