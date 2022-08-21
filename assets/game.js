@@ -61,33 +61,10 @@ function getCookie(cname) {
  * Add EventListeners to all Buttons
  */
 console.log("found ", controls.length, " controls");
-// some problem with getElementsByClassName means length is 0
-if (controls.length) {
-    for (let control of controls) {
-        console.log("adding event listener for ", control);
-        button.addEventListener("click", function () {
-            let playerChoice = this.getAttribute("data-choice");
-            playGame(playerChoice);
-        });
-    }
-} else {
-    document.getElementById("rock").addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    });
-    document.getElementById("paper").addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    });
-    document.getElementById("scissors").addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    });
-    document.getElementById("lizzard").addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    });
-    document.getElementById("spock").addEventListener("click", function () {
+
+for (let control of controls) {
+    console.log("adding event listener for ", control);
+    button.addEventListener("click", function () {
         let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
