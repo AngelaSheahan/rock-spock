@@ -10,7 +10,7 @@
     <script src="assets/game.js"></script>
 </head>
 
-<body>
+<body onload="onLoad()">
     <header>
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
     </header>
@@ -18,8 +18,7 @@
         <div>
             <form name="myform" action="">
                 Enter name: <input type="text" name="player" />
-                <input type="button" value="PLAY" onclick="SavePlayerName();" />
-                <input type="button" value="GET" onclick="GetPlayerName();" />
+                <input type="button" value="PLAY" onclick="SetPlayerName();" />
             </form>
             <p>Make a Choice:</p>
             <button id="rock" aria-label="Rock" data-choice="0" class="controls">Rock</button>

@@ -1,20 +1,26 @@
-/**
- * Declare all DOM Elements
- * */
-const controls = document.getElementsByClassName("controls");
+
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
-const playerImage = document.getElementById("player-image");
-const computerImage = document.getElementById("computer-image");
 const messgaes = document.getElementById("messages");
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+
+function onLoad() {
+    let controls = document.getElementsByClassName("controls");
+    for (let control of controls) {
+        control.addEventListener("click", function () {
+            let playerChoice = this.getAttribute("data-choice");
+            playGame(playerChoice);
+        });
+    }
+}
 
 /** Creates cookie to store player name. If player name not added and PLAY buttonn clicked, Alert msg appears */
 
 // to keep the player name
 var playerName;
 
-function SavePlayerName() {
+// set player name
+function SetPlayerName() {
     if (document.myform.player.value == "") {
         alert("Enter your first name");
         return;
@@ -24,7 +30,7 @@ function SavePlayerName() {
     // playerName = document.myform.player.value;
 }
 
-//test to get player name
+// get player name
 function GetPlayerName() {
     // alert(playerName);
     alert(getCookie("player"));
@@ -57,25 +63,13 @@ function getCookie(cname) {
     return "";
 }
 
-/**
- * Add EventListeners to all Buttons
- */
-console.log("found ", controls.length, " controls");
-
-for (let control of controls) {
-    console.log("adding event listener for ", control);
-    button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    });
-}
-
 function playGame(playerChoice) {
+    let playerImage = document.getElementById("player-image");
     playerImage.src = `assets/images${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
 
     let computerChoice = Math.floor(Math.random() * 5);
-
+    let computerImage = document.getElementById("computer-image");
     computerImage.src = `assets/images${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
