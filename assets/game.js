@@ -113,3 +113,19 @@ function updateScore(winner) {
     let oldScore = parseInt(document.getElementById(winner + "-score").textContent);
     document.getElementById(winner + "-score").textContent = oldScore + 1;
 }
+
+//Awards system.
+
+Function displayAward() {
+    if (number of games = 2 && player score = 2) {
+        alert "You Rock"and display bronze trophy;
+    }
+
+    if (number of games = 3 && player score = 3) {
+        alert "You'r Sharp as Paper"and display silver trophy;
+    }
+    if (number of games = 5 && player score = 5) {
+        alert "You cut the Paper to Shreds" and display gold trophy;
+    }
+    else
+    return;
