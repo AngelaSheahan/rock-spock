@@ -10,6 +10,14 @@ function onLoad() {
     }
 }
 
+// Hide the game area until player enters name and presses the PLAY key
+// $(document).onload(function(){
+//     $(".game-area").hide();
+// });
+// $(".PLAY").click(function(){
+//   $(".game-area").show();
+// });
+
 /** Creates cookie to store player name. If player name not added and PLAY buttonn clicked, Alert msg appears */
 
 // set player name
