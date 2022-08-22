@@ -1,19 +1,25 @@
 As a player I want to view the game rules before I decide to play.
 - ~~Create a table of rules.~~
-- Game name, form label, text imput field and game rules to appear on screen.
+The following items to appear on the first page:
+- Name Game
+- Game Logo
+- Game Rules
      <br>
 
 As a player I want to enter my name (so as to keep trace of my score) before I start playing the game.
 - ~~Create a form field to enter player name.~~
+- ~~Create a PLAY button.~~
+- ~~Create an Alert, to display if player presses PLAY button without entering a name.~~
 - ~~Save player name to a cookie.~~
 - ~~Sourced cookie code from [cookie](http://w3schools.com)~~
 
-** A group of buttons (Rock, Paper, Scissors, Lizard, Spock) to appear AFTER player enters name.  
-** A Game Window to appear on screen also (where a pictorial representation of choice will appear after   button is clicked)
+The following items to appear AFTER the player has entered a name AND clicked on the PLAY button.
+- Game buttons (Rock, Paper, Scissors, Lizard, Spock).
+- 2 mini Game Windows (beside each other - one for Player choice, one for Computer choice )
      <br>
 
 As a user, I want my name to appear in the Game Window.
-- Create <span> as a placeholder for username.
+- ~~Create <span> as a placeholder for username.~~
      <br/>
 
 As a user, I want to see a Game Window displaying a hand picture representing my selection.
@@ -32,8 +38,8 @@ As a user, I want the computer to make a random choice resulting in a hand pictu
         <br/>
    
 As a user, I want to clearly see who won the present game.
-- Create a Message 'Player Wins' or 'Computer Wins' between the 2 game windows.
-- Update the score, and display the score beside the winners name (Player or Computer).
+- ~~Create a Message 'Player Wins' or 'Computer Wins' between the 2 game windows.~~
+- ~~Update the score, and display the score beside the winners name (Player or Computer).~~
      <br>
 
 As a user, I want to have 5 goes before the game ends.

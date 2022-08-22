@@ -12,10 +12,25 @@ body {
     margin: 0;
 }
 
-#rules {
-    border-color: black;
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table, td {
+    border-right: 1px solid black;
+    padding-left: 4px;
+    
+
+    
+   
+
+    /* border-color: black;
     border-right: 2px;
-    text-align: right;
+    text-align: right; */
+}
+
+awards {
 
 }
 

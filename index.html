@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet" href="assets/game.css">
+    <link rel="stylesheet" href="assets/game.css">
     <title>Rock Spock</title>
     <script src="assets/game.js"></script>
 </head>
@@ -13,28 +13,29 @@
 <body onload="onLoad()">
     <header>
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
-
-        <table id="rules" style="width:50%">
-            <tr>
-                <td>Rock crushes Lizard</td>
-                <td>Lizard poisons Spock</td>
-                <td>Spock smashes Scissors</td>
-            </tr>
-            <tr>
-                <td>Scissors cuts Paper</td>
-                <td>Paper covers Rock</td>
-                <td>Rock crushes Scissors</td>
-            </tr>
-            <tr>
-                <td>Scissors decapitates Lizard</td>
-                <td>Lizard eats Paper</td>
-                <td>Paper disaproves Spock</td>
-            </tr>
-            <tr>
-                <td>Spock vaporizes Rock</td>
-            </tr>
-        </table>
     </header>
+    <div>
+    <table>
+        <tr>
+            <td>Rock crushes Lizard</td>
+            <td>Lizard poisons Spock</td>
+            <td>Spock smashes Scissors</td>
+        </tr>
+        <tr>
+            <td>Scissors cuts Paper</td>
+            <td>Paper covers Rock</td>
+            <td>Rock crushes Scissors</td>
+        </tr>
+        <tr>
+            <td>Scissors decapitates Lizard</td>
+            <td>Lizard eats Paper</td>
+            <td>Paper disaproves Spock</td>
+        </tr>
+        <tr>
+            <td>Spock vaporizes Rock</td>
+        </tr>
+    </table >
+    </div>
     <section class="game-area">
         <div>
             <h3><span id="messages"></span></h3>
@@ -62,23 +63,22 @@
             <img id="computer-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
         </div>
         <div>
-        <table id="awards">
-            <tr>
-                <td>Beat the Computer 2 times in a row</td>
-                <td>Bronze Champion</td>
-            </tr>
-            <tr>
-                <td>Beat the Computer 3 times in a row</td>
-                <td>Silver Champion</td>
-            </tr>
-            <td>Beat the Computer 5 times in a row</td>
-            <td>Gold Champion</td>
-        </table>
+            <table>
+                <tr>
+                    <td>Beat the Computer 2 times in a row</td>
+                    <td>Bronze Champion</td>
+                </tr>
+                <tr>
+                    <td>Beat the Computer 3 times in a row</td>
+                    <td>Silver Champion</td>
+                </tr>
+                <td>Beat the Computer 5 times in a row</td>
+                <td>Gold Champion</td>
+            </table>
         </div>
     </section>
     <footer>
-        <h3>Rules</h3>
-        <p></p>
+    
     </footer>
 </body>
 
