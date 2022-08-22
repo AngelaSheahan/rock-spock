@@ -12,6 +12,12 @@ body {
     margin: 0;
 }
 
+#rules {
+    border-color: black;
+    border-right: 2px;
+
+}
+
 /* Header and Footer */
 header {
     text-align: center;
