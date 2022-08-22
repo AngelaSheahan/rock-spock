@@ -15,6 +15,7 @@ body {
 #rules {
     border-color: black;
     border-right: 2px;
+    text-align: right;
 
 }
 

@@ -1,12 +1,12 @@
 As a player I want to view the game rules before I decide to play.
-- Create a table of rules.
+- ~~Create a table of rules.~~
 - Game name, form label, text imput field and game rules to appear on screen.
      <br>
 
 As a player I want to enter my name (so as to keep trace of my score) before I start playing the game.
 - ~~Create a form field to enter player name.~~
 - ~~Save player name to a cookie.~~
-- ~~Sourced cookie code from [cookie](http://tutorialspoint.com)~~
+- ~~Sourced cookie code from [cookie](http://w3schools.com)~~
 
 ** A group of buttons (Rock, Paper, Scissors, Lizard, Spock) to appear AFTER player enters name.  
 ** A Game Window to appear on screen also (where a pictorial representation of choice will appear after   button is clicked)
@@ -59,11 +59,8 @@ As a user, I want the game to display a Winner Alert if I win 5 consecutive game
      -  Source pic of Gold trophy and save to Images folder.
      <br/>
 
-As a user, I want to select a button, to play a NEW GAME.
-    <br/>
-
-As a user, I want to exist the game.
-    <br/>
-
 As a user, I want to be able to see highest score of the last 5 users of the game.
-- Create a Cookie.
+- Scores will be in the form of how many Bronze, Silver and Gold trophies won.
+- Stores results in cookie created to store player name. Scorebord to be updated after 2 week?
+     - Source Json scorebord code.
+     - Add score code to Cookie.
