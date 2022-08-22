@@ -114,18 +114,24 @@ function updateScore(winner) {
     document.getElementById(winner + "-score").textContent = oldScore + 1;
 }
 
+
+// function gameCounter(){
+
+// }
+
+
 //Awards system.
+// Function displayAward() {
+    // let gamesPlayed =
+//     if (gamesPlayed = 2 && player score = "2") {
+//         alert ("You Rock")and display bronze trophy;
+//     }
 
-Function displayAward() {
-    if (number of games = 2 && player score = 2) {
-        alert "You Rock"and display bronze trophy;
-    }
-
-    if (number of games = 3 && player score = 3) {
-        alert "You'r Sharp as Paper"and display silver trophy;
-    }
-    if (number of games = 5 && player score = 5) {
-        alert "You cut the Paper to Shreds" and display gold trophy;
-    }
-    else
-    return;
+//     if (gamesPlayed = 3 && player score = "3") {
+//         alert ("You'r Sharp as Paper")and display silver trophy;
+//     }
+//     if (gamesPlayed = 5 && player score = "5") {
+//         alert ("You cut the Paper to Shreds") and display gold trophy;
+//     }
+//     else
+//     return;
