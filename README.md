@@ -70,3 +70,7 @@ As a user, I want to be able to see highest score of the last 5 users of the gam
 - Stores results in cookie created to store player name. Scorebord to be updated after 2 week?
      - Source Json scorebord code.
      - Add score code to Cookie.
+
+
+Learnings
+- Mentor advised to re-write if/else statement in my JavaScript file as a Switch Statement. However on my research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
