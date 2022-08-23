@@ -12,13 +12,10 @@
 
 
 <body onload="onLoad()">
-
-    <body onload="myFunction()">
-
-
-        <header>
-            <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
-        </header>
+    <header>
+        <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
+    </header>
+    <section id="login-area">
         <div>
             <h3>Here's How to Play</h3>
             <table>
@@ -42,51 +39,54 @@
                 </tr>
             </table>
         </div>
-        <section class="game-area">
-            <div>
-                <h3><span id="messages"></span></h3>
-            </div>
-            <div>
-                <form name="myform" action="">
-                    Enter name: <input type="text" name="player" />
-                    <input type="button" value="PLAY" onclick="setPlayerName();" />
-                </form>
-                <p>Make a Choice:</p>
-                <button id="rock" aria-label="Rock" data-choice="0" class="controls">Rock</button>
-                <button id="paper" aria-label="Paper" data-choice="1" class="controls">Paper</button>
-                <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">Scissors</button>
-                <button id="lizard" aria-label="Lizard" data-choice="3" class="controls">Lizard</button>
-                <button id="spock" aria-label="Spock" data-choice="4" class="controls">Spock</button>
-            </div>
-            <div class="player">
-                <h3 class="scores">
-                    <input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span>
-                </h3>
-                <img id="player-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
-            </div>
-            <div class="computer">
-                <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
-                <img id="computer-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
-            </div>
-            <div>
-                <table>
-                    <tr>
-                        <td>Beat the Computer 2 times in a row</td>
-                        <td>Bronze Champion</td>
-                    </tr>
-                    <tr>
-                        <td>Beat the Computer 3 times in a row</td>
-                        <td>Silver Champion</td>
-                    </tr>
-                    <td>Beat the Computer 5 times in a row</td>
-                    <td>Gold Champion</td>
-                </table>
-            </div>
-        </section>
+        <div>
+            <form name="myform" action="">
+                Enter name: <input type="text" name="player" />
+                <input type="button" value="PLAY" onclick="setPlayerName();" />
+            </form>
+        </div>
+    </section>
+    <section id="game-area">
+        <div>
+            <h3><span id="messages"></span></h3>
+        </div>
+        <div>
+            <p>Make a Choice:</p>
+            <button id="rock" aria-label="Rock" data-choice="0" class="controls">Rock</button>
+            <button id="paper" aria-label="Paper" data-choice="1" class="controls">Paper</button>
+            <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">Scissors</button>
+            <button id="lizard" aria-label="Lizard" data-choice="3" class="controls">Lizard</button>
+            <button id="spock" aria-label="Spock" data-choice="4" class="controls">Spock</button>
+        </div>
+        <div class="player">
+            <h3 class="scores">
+                <input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span>
+            </h3>
+            <img id="player-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
+        </div>
+        <div class="computer">
+            <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
+            <img id="computer-image" src="" alt="Rock, Paper, Scissors, Lizard, Spock">
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>Beat the Computer 2 times in a row</td>
+                    <td>Bronze Champion</td>
+                </tr>
+                <tr>
+                    <td>Beat the Computer 3 times in a row</td>
+                    <td>Silver Champion</td>
+                </tr>
+                <td>Beat the Computer 5 times in a row</td>
+                <td>Gold Champion</td>
+            </table>
+        </div>
+    </section>
 
-        <footer>
+    <footer>
 
-        </footer>
-    </body>
+    </footer>
+</body>
 
 </html>

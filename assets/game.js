@@ -1,6 +1,7 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 function onLoad() {
+    // add button listeners
     let controls = document.getElementsByClassName("controls");
     for (let control of controls) {
         control.addEventListener("click", function () {
@@ -8,6 +9,8 @@ function onLoad() {
             playGame(playerChoice);
         });
     }
+    // hide game area initially
+    document.getElementById("game-area").style.display = "none";
 }
 
 // JS
@@ -20,11 +23,6 @@ function onLoad() {
 // $(document).ready(function () {
 //     $(".game-area").hide();
 // });
-
-function myFunction() {
-    document.getElementsByClassName("game-area").innerHTML.style.display="none";
-}
-
 
 // Hide the game-area on page load
 // function hideClass() {
@@ -49,9 +47,9 @@ function myFunction() {
 //   };
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    (".game.area").hide();
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     (".game.area").hide();
+// });
 
 // Hide the game area until player enters name and presses the PLAY key
 // $(".PLAY").click(function(){
@@ -68,6 +66,11 @@ function setPlayerName() {
     }
     // Cookies are saved in name-value pairs
     setCookie("player", document.myform.player.value, 1)
+
+    // show game area
+    document.getElementById("game-area").style.display = "block";
+    // hide login area
+    document.getElementById("login-area").style.display = "none";
 }
 
 // get player name
