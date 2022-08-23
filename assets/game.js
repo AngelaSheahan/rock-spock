@@ -17,11 +17,13 @@ function onLoad() {
 
 // Jquery
 
-$(document).ready(function() {
-    $(".game-area").hide();
-});
+// $(document).ready(function () {
+//     $(".game-area").hide();
+// });
 
-
+function myFunction() {
+    document.getElementsByClassName("game-area").innerHTML.style.display="none";
+}
 
 
 // Hide the game-area on page load
@@ -45,9 +47,9 @@ $(document).ready(function() {
 // document.onload = function() {
 //     (".game.area").hide();
 //   };
-  
 
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
     (".game.area").hide();
 });
 
@@ -123,26 +125,57 @@ function playGame(playerChoice) {
     updateScore(winner);
 }
 
-// See who the winners is.
-function getWinner(playerChoice, computerChoice) {
-    console.log("player choice: ", playerChoice, " computer choice: ", computerChoice);
-    if (playerChoice === "Scissors" && (computerChoice == "Paper" || computerChoice == "Lizard")) {
-        return "player";
-    }
-    if (playerChoice === "Paper" && (computerChoice === "Rock" || computerChoice === "Spock")) {
-        return "player";
-    }
-    if (playerChoice === "Rock" && (computerChoice === "Lizard" || computerChoice === "Scissors")) {
-        return "player";
-    }
-    if (playerChoice === "Lizard" && (computerChoice === "Spock" || computerChoice === "Paper")) {
-        return "player";
-    }
-    if (playerChoice === "Spock" && (computerChoice === "Scissors" || computerChoice === "Rock")) {
-        return "player";
-    }
-    return "computer";
+// see who the winner is (Switch Statement)
+switch (playerChoice, computerChoice) {
+    case Scissors:
+    case Paper || Lizard:
+        winner = playerChoice;
+        break;
+    case Paper:
+    case Rock || Spock:
+        winner = playerChoice;
+        break;
+    case Rock:
+    case Lizard || Scissor:
+        winner = playerChoice;
+        break;
+    case Lizard:
+    case Spock || Paper:
+        winner = playerChoice;
+        break;
+    case Spock:
+    case Scissors || Rock:
+        winner = playerChoice;
+        break;
+    default:
+        winner = computerChoice;
 }
+}
+
+
+
+
+
+// See who the winners is.
+// function getWinner(playerChoice, computerChoice) {
+//     console.log("player choice: ", playerChoice, " computer choice: ", computerChoice);
+//     if (playerChoice === "Scissors" && (computerChoice == "Paper" || computerChoice == "Lizard")) {
+//         return "player";
+//     }
+//     if (playerChoice === "Paper" && (computerChoice === "Rock" || computerChoice === "Spock")) {
+//         return "player";
+//     }
+//     if (playerChoice === "Rock" && (computerChoice === "Lizard" || computerChoice === "Scissors")) {
+//         return "player";
+//     }
+//     if (playerChoice === "Lizard" && (computerChoice === "Spock" || computerChoice === "Paper")) {
+//         return "player";
+//     }
+//     if (playerChoice === "Spock" && (computerChoice === "Scissors" || computerChoice === "Rock")) {
+//         return "player";
+//     }
+//     return "computer";
+// }
 
 // Update the winners score.
 function updateScore(winner) {
@@ -160,7 +193,7 @@ function updateScore(winner) {
 
 //Awards system.
 // Function displayAward() {
-    // let gamesPlayed =
+// let gamesPlayed =
 //     if (gamesPlayed = 2 && player score = "2") {
 //         alert ("You Rock")and display bronze trophy;
 //     }
