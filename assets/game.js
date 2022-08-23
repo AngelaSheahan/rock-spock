@@ -10,10 +10,48 @@ function onLoad() {
     }
 }
 
-// Hide the game area until player enters name and presses the PLAY key
-// $(document).onload(function(){
+// JS
+// window.onload = function() {
+//   document.getElementsByClassName("game-area").style.display = 'none';
+// };
+
+// Jquery
+
+$(document).ready(function() {
+    $(".game-area").hide();
+});
+
+
+
+
+// Hide the game-area on page load
+// function hideClass() {
+//     document.getElementsByClassName("game-area").innerHTML.style.visibility="hidden";
+// }
+
+// window.onload = function(){  
+//     document.getElementsByClassName("game-area").innerHTML.style.display = "none";  
+//     }  
+
+
+// $(function() {
+//     $(".game-area").hide()
+// });
+
+// $(window).onload(function(){
 //     $(".game-area").hide();
 // });
+
+// document.onload = function() {
+//     (".game.area").hide();
+//   };
+  
+
+document.addEventListener("DOMContentLoaded", function() {
+    (".game.area").hide();
+});
+
+// Hide the game area until player enters name and presses the PLAY key
 // $(".PLAY").click(function(){
 //   $(".game-area").show();
 // });
