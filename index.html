@@ -62,28 +62,31 @@
             <h3 class="scores">
                 <input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span>
             </h3>
-            <img id="player-image" src="assets/images/rock.jpg" alt="Rock">
-            <img id="player-image" src="assets/images/paper.jpg" alt="Paper">
-            <img id="player-image" src="assets/images/scissors.jpg" alt="Scissors">
-            <img id="player-image" src="assets/images/lizard.jpg" alt="Lizard">
-            <img id="player-image" src="assets/images/spock.jpg" alt="Spock">
+            <img id="player-image">
         </div>
         <div class="computer">
             <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
-            <img id="computer-image" src="assets/images/rock.jpg" alt="Rock">
-            <img id="computer-image" src="assets/images/paper.jpg" alt="Paper">
-            <img id="computer-image" src="assets/images/scissors.jpg" alt="Scissors">
-            <img id="computer-image" src="assets/images/lizard.jpg" alt="Lizard">
-            <img id="computer-image" src="assets/images/spock.jpg" alt="Spock">
+            <img id="computer-image">
         </div>
+
+        <!-- New Game & Exit Game Modal -->
         <div>
-            <div id="gameModal" class="modal">
-                <div class="modal-content">
+            <div id="gameModal" class="modal1">
+                <div class="modal1-content">
                     <h2> Game Complete!</h2>
                     <button id="new-game" aria-label="New Game">New Game</button>
                     <button id="exit" aria-label="Exit">Exit</button>
                 </div>
             </div>
+
+            <!-- Award Modal -->
+            <div>
+                <div id="awardModal" class="modal2">
+                    <div class="modal2-content">
+                        <h2> Bronze Champion</h2>
+                        <p></p>
+                    </div>
+                </div>
 
         </div>
         <table>
