@@ -11,6 +11,8 @@ function onLoad() {
     }
     // hide game area initially
     document.getElementById("game-area").style.display = "none";
+    // hide game over message area
+    document.getElementById("game-over").style.display = "none";
 }
 
 // JS
@@ -71,6 +73,7 @@ function setPlayerName() {
     document.getElementById("game-area").style.display = "block";
     // hide login area
     document.getElementById("login-area").style.display = "none";
+
 }
 
 // get player name
@@ -128,6 +131,8 @@ function playGame(playerChoice) {
     updateScore(winner);
 
     displayAward(winner);
+
+    checkGameOver(winner);
 }
 
 // See who the winners is.
@@ -155,18 +160,37 @@ function getWinner(playerChoice, computerChoice) {
 function updateScore(winner) {
     console.log("winner : ", winner)
     document.getElementById("messages").textContent = ((winner === "computer") ? "computer" : getPlayerName()) + " wins";
-    let oldScore = parseInt(document.getElementById(winner + "-score").textContent);
-    document.getElementById(winner + "-score").textContent = oldScore + 1;
+    let score = parseInt(document.getElementById(winner + "-score").textContent);
+    document.getElementById(winner + "-score").textContent = score + 1;
 }
 
 
-function gameModal(oldScore) {
 
-    console.log("The score is" , + oldScore);
+function checkGameOver(winner) {
+    let playerScore = parseInt(document.getElementById("player-score").textContent);
+    let computerScore = parseInt(document.getElementById("computer-score").textContent);
+    if (playerScore + computerScore === 5) {
+        // show game over modal
+        document.getElementById("game-over-modal").style.display = "block";
+    }
+    // Get the <span> element that closes the modal
+    // var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on <span> (x), close the modal
+    // span.onclick = function () {
+    //     document.getElementById("myModal").style.display = "none";
+    // }
 }
 
-    // if (oldScore == 5) {
-    //     var modal = document.getElementById("myModal");
+function newGame() {
+    document.getElementById("game-over-modal").style.display = "none";
+}
+
+function exitGame() {
+    document.getElementById("game-over-modal").style.display = "none";
+}
+
+
+//     var modal = document.getElementById("myModal");
 
 function displayAward(winner) {
     console.log("Display award for " + winner);
@@ -192,6 +216,3 @@ function displayAward(winner) {
     //     return;
 
 }
-
-
-

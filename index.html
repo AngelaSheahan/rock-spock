@@ -68,12 +68,18 @@
             <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
             <img id="computer-image">
         </div>
-        <div id="message-box">
-            <h3> Game Ended!</h3>
-            <button id="game" onclick="newGame()">New Game</button>
-            <button id="exist" onclick="exist()">Exit</button>
+        <div id="game-over-modal" class="modal">
+            <div class="modal-content">
+                <!-- <span class="close">&times;</span> -->
+                <h3>Game Ended!</h3>
+                <div>
+                    <button id="new-game" onclick="newGame()">New Game</button>
+                </div>
+                <div>
+                    <button id="exit-game" onclick="exitGame()">Exit Game</button>
+                </div>
+            </div>
         </div>
-
         <table>
             <tr>
                 <td>Beat the Computer 2 times in a row</td>
