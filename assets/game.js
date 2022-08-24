@@ -164,40 +164,47 @@ function displayAward(winner) {
 
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     if (winner === "player" && score == 2) {
-        console.log(getPlayerName() + " you rock!");
+        console.log(getPlayerName() + " ,You Rock!");
+        else
+        if (winner === "player" && score == 3) {
+            console.log(getPlayerName() + " ,You're Sharp as Paper!");
+            else
+            if (winner === "player" && score == 5) {
+                console.log(getPlayerName() + " ,You Cut the Computer to Shreds!")
+            }
+        }
+
+        // }
+        // if (gamesWon = 3 && player score = "3") {
+        //     alert("You'r Sharp as Paper") and display silver trophy;
+        // }
+        // if (gamesWon = 5 && player score = "5") {
+        //     alert("You cut the Paper to Shreds") and display gold trophy;
+        // } else
+        //     return;
+
     }
 
+    // function callModal(oldScore) {
+    //     if (oldScore == 5) {
+    //         var modal = document.getElementById("myModal");
+    //     }
     // }
-    // if (gamesWon = 3 && player score = "3") {
-    //     alert("You'r Sharp as Paper") and display silver trophy;
+
+    // function gameCounter(){
     // }
-    // if (gamesWon = 5 && player score = "5") {
-    //     alert("You cut the Paper to Shreds") and display gold trophy;
-    // } else
+
+    //Awards system.
+    // function displayAward() {
+    //     let gamesPlayed =
+    //         if (gamesPlayed = 2 && player score = "2") {
+    //             alert("You Rock") and display bronze trophy;
+    //         }
+    //     if (gamesPlayed = 3 && player score = "3") {
+    //         alert("You'r Sharp as Paper") and display silver trophy;
+    //     }
+    //     if (gamesPlayed = 5 && player score = "5") {
+    //         alert("You cut the Paper to Shreds") and display gold trophy;
+    //     } else {}
     //     return;
-
-}
-
-// function callModal(oldScore) {
-//     if (oldScore == 5) {
-//         var modal = document.getElementById("myModal");
-//     }
-// }
-
-// function gameCounter(){
-// }
-
-//Awards system.
-// function displayAward() {
-//     let gamesPlayed =
-//         if (gamesPlayed = 2 && player score = "2") {
-//             alert("You Rock") and display bronze trophy;
-//         }
-//     if (gamesPlayed = 3 && player score = "3") {
-//         alert("You'r Sharp as Paper") and display silver trophy;
-//     }
-//     if (gamesPlayed = 5 && player score = "5") {
-//         alert("You cut the Paper to Shreds") and display gold trophy;
-//     } else {}
-//     return;
-// }
+    // }
