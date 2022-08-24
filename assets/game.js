@@ -76,7 +76,6 @@ function setPlayerName() {
 // get player name
 function getPlayerName() {
     let player = getCookie("player");
-    console.log(player);
     return player;
 }
 
