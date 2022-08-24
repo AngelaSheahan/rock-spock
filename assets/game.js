@@ -109,12 +109,12 @@ function getCookie(cname) {
 
 function playGame(playerChoice) {
     let playerImage = document.getElementById("player-image");
-    playerImage.src = `assets/images${choices[playerChoice]}.png`;
+    playerImage.src = `assets/images${choices[playerChoice]}.jpg`;
     playerImage.alt = choices[playerChoice];
 
     let computerChoice = Math.floor(Math.random() * 5);
     let computerImage = document.getElementById("computer-image");
-    computerImage.src = `assets/images${choices[computerChoice]}.png`;
+    computerImage.src = `assets/images${choices[computerChoice]}.jpg`;
     computerImage.alt = choices[computerChoice];
 
     if (choices[playerChoice] == choices[computerChoice]) {
