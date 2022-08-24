@@ -68,27 +68,12 @@
             <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
             <img id="computer-image">
         </div>
-
-        <!-- New Game & Exit Game Modal -->
-        <div>
-            <div id="gameModal" class="modal1">
-                <div class="modal1-content">
-                    <h2> Game Complete!</h2>
-                    <button id="new-game" aria-label="New Game">New Game</button>
-                    <button id="exit" aria-label="Exit">Exit</button>
-                </div>
-            </div>
-
-            <!-- Award Modal -->
-            <div>
-                <div id="awardModal" class="modal2">
-                    <div class="modal2-content">
-                        <h2> Bronze Champion</h2>
-                        <p></p>
-                    </div>
-                </div>
-
+        <div id="message-box">
+            <h3> Game Ended!</h3>
+            <button id="game" onclick="newGame()">New Game</button>
+            <button id="exist" onclick="exist()">Exit</button>
         </div>
+
         <table>
             <tr>
                 <td>Beat the Computer 2 times in a row</td>
