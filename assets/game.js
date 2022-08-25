@@ -1,5 +1,5 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
-const awardMessages = ["You Rock", "You're Sharp as Paper", "You Cut the Computer to Shreds"];
+const awardMessage = ["You Rock", "You're Sharp as Paper", "You Cut the Computer to Shreds"];
 const awardType = ["Bronze Champion", "Silver Champion", "Gold Champion"];
 const gameScore = [2, 3, 5];
 
@@ -204,23 +204,11 @@ function displayAward(winner) {
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     if (winner === "player" && score == 2) {
         console.log("bronze");
+        document.getElementById("award-modal").style.display="block";
         document.getElementById("award-statement").style.display="block";
-        document.getElementById("award-modal")
-
-
-        
+        document.getElementById("award-statement").style.display=awardType[0];
+        document.getElementById("award-message").style.display="block";
+        document.getElementById("award-message").style.display=awardMessage[0];
+    }  
+    
     }
-
-}
-//         if (winner === "player" && score == 3) {
-//             awardModal();
-//             if (winner === "player" && score == 5) {
-//                 awardModal();
-//             }
-//         }
-//     }
-// }
-
-// function awardModal() {
-
-// }
