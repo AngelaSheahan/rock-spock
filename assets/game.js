@@ -94,7 +94,7 @@ function playGame(playerChoice) {
 
     updateScore(winner);
 
-    displayAward(winner);
+    checkDisplayAward(winner);
 
     checkGameOver(winner);
 }
@@ -154,16 +154,20 @@ function exitGame() {
     document.getElementById("myForm").reset();
 }
 
-function displayAward(winner) {
-    console.log("Display award for " + winner);
+function checkDisplayAward(winner) {
+    console.log("Check award for " + winner);
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     let awardImageElement = document.getElementById("trophy");
     if (winner === "player" && score == 2) {
-        newFunction(0, awardImageElement);
+        displayAward(0, awardImageElement);
+    } else if (winner === "player" && score == 3) {
+        displayAward(1, awardImageElement);
+    } else if (winner === "player" && score == 5) {
+        displayAward(2, awardImageElement);
     }
 }
 
-function newFunction(awardIndex, awardImage) {
+function displayAward(awardIndex, awardImage) {
     document.getElementById("award-modal").style.display = "block";
     document.getElementById("award-statement").innerHTML = awardType[awardIndex];
     document.getElementById("award-message").innerHTML = awardMessage[awardIndex];
