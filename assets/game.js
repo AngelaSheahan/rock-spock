@@ -142,10 +142,10 @@ function checkGameOver(winner) {
 
 function newGame() {
     // retain player name??
-    document.getElementById("game-over-modal").modal.close();
+    console.log("player selected new game");
+    document.getElementById("game-over-modal").style.display = "none";
     document.getElementById("playerScore").reset();
-    document.getElementById("computerScore").reset();
-
+    // document.getElementById("computerScore").reset();
 }
 
 function exitGame() {
