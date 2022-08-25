@@ -157,20 +157,19 @@ function exitGame() {
 function displayAward(winner) {
     console.log("Display award for " + winner);
     let score = parseInt(document.getElementById(winner + "-score").textContent);
-    let awardImage = document.getElementById("trophy");
+    let awardImageElement = document.getElementById("trophy");
     if (winner === "player" && score == 2) {
-        console.log("bronze");
-        document.getElementById("award-modal").style.display="block";
-        document.getElementById("award-statement").style.display="block";
-        document.getElementById("award-statement").innerHTML=awardType[0];
-        document.getElementById("award-message").style.display="block";
-        document.getElementById("award-message").innerHTML=awardMessage[0];
-        awardImage.src = `assets/images/${awardType[0]}.jpg`;
+        newFunction(0, awardImageElement);
+    }
+}
 
-        const span = document.getElementById("award-close");
-        span.onclick = function () {
-            document.getElementById("award-modal").style.display = "none";
-    }  
+function newFunction(awardIndex, awardImage) {
+    document.getElementById("award-modal").style.display = "block";
+    document.getElementById("award-statement").innerHTML = awardType[awardIndex];
+    document.getElementById("award-message").innerHTML = awardMessage[awardIndex];
+    awardImage.src = `assets/images/${awardType[awardIndex]}.jpg`;
+    const span = document.getElementById("award-close");
+    span.onclick = function () {
+        document.getElementById("award-modal").style.display = "none";
+    };
 }
-}
-        
