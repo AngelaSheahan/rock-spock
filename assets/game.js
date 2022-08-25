@@ -1,4 +1,6 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+const awardMessages = ["You Rock", "You're Sharp as Paper", "You Cut the Computer to Shreds"];
+const awardType = ["Bronze Champion", "Silver Champion", "Gold Champion"];
 
 function onLoad() {
     // add button listeners
@@ -66,12 +68,13 @@ function setPlayerName() {
         document.getElementById("no-name-modal").style.display = "block";
     }
 
-// Closes the "Enter Your Name" modal when player clicks on <span> (x)
-const span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-    document.getElementById("no-name-modal").style.display = "none";
+    // Closes the "Enter Your Name" modal when player clicks on <span> (x)
+    const span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+        document.getElementById("no-name-modal").style.display = "none";
+    }
 }
-}
+
 
 
 // Cookies are saved in name-value pairs
@@ -193,37 +196,34 @@ function checkGameOver(winner) {
 }
 
 function newGame() {
-    document.getElementById("game-over-modal").style.display = "none";
+    // retain player name??
+    document.getElementById("game-over-modal").modal.close();
+    document.getElementById("playerScore").reset();
+    document.getElementById("computerScore").reset();
+
 }
 
 function exitGame() {
-    document.getElementById("game-over-modal").style.display = "none";
+    document.getElementById("game-over-modal").modal.close();
+    document.getElementById("game-area").style.display = "none";
+    document.getElementById("myForm").reset();
 }
 
-
-//     var modal = document.getElementById("myModal");
-
 function displayAward(winner) {
-    console.log("Display award for " + winner);
+    // console.log("Display award for " + winner);
 
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     if (winner === "player" && score == 2) {
-        document.getElementById("award-modal").style.display = "block";
+        awardModal();
         if (winner === "player" && score == 3) {
-            console.log(getPlayerName() + " ,You're Sharp as Paper!");
+            awardModal();
             if (winner === "player" && score == 5) {
-                console.log(getPlayerName() + " ,You Cut the Computer to Shreds!")
+                awardModal();
             }
         }
     }
+}
 
-    // }
-    // if (gamesWon = 3 && player score = "3") {
-    //     alert("You'r Sharp as Paper") and display silver trophy;
-    // }
-    // if (gamesWon = 5 && player score = "5") {
-    //     alert("You cut the Paper to Shreds") and display gold trophy;
-    // } else
-    //     return;
+function awardModal() {
 
 }
