@@ -19,7 +19,7 @@ function onLoad() {
 }
 
 
-    // document.getElementById("game-over").style.display = "none";
+// document.getElementById("game-over").style.display = "none";
 
 // JS
 // window.onload = function() {
@@ -70,25 +70,20 @@ function onLoad() {
 function setPlayerName() {
     if (document.myform.player.value === "") {
         document.getElementById("no-name-modal").style.display = "block";
-    }
-
-    // Closes the "Enter Your Name" modal when player clicks on <span> (x)
-    const span = document.getElementsByClassName("close")[0];
-    span.onclick = function () {
-        document.getElementById("no-name-modal").style.display = "none";
+        // Closes the "Enter Your Name" modal when player clicks on <span> (x)
+        const span = document.getElementById("no-name-close");
+        span.onclick = function () {
+            document.getElementById("no-name-modal").style.display = "none";
+        }
+    } else {
+        // Cookies are saved in name-value pairs
+        setCookie("player", document.myform.player.value, 1);
+        // show game area
+        document.getElementById("game-area").style.display = "block";
+        // hide login area
+        document.getElementById("login-area").style.display = "none";
     }
 }
-
-
-
-// Cookies are saved in name-value pairs
-setCookie("player", document.myform.player.value, 1)
-
-// show game area
-document.getElementById("game-area").style.display = "block";
-// hide login area
-document.getElementById("login-area").style.display = "none";
-
 
 // get player name
 function getPlayerName() {
@@ -135,10 +130,6 @@ function playGame(playerChoice) {
     computerImage.alt = choices[computerChoice];
 
     if (choices[playerChoice] == choices[computerChoice]) {
-
-
-
-
         // alert("try again");
         // return;
     }
@@ -209,20 +200,27 @@ function exitGame() {
 }
 
 function displayAward(winner) {
-    // console.log("Display award for " + winner);
-
+    console.log("Display award for " + winner);
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     if (winner === "player" && score == 2) {
-        awardModal();
-        if (winner === "player" && score == 3) {
-            awardModal();
-            if (winner === "player" && score == 5) {
-                awardModal();
-            }
-        }
+        console.log("bronze");
+        document.getElementById("award-statement").style.display="block";
+        document.getElementById("award-modal")
+
+
+        
     }
-}
-
-function awardModal() {
 
 }
+//         if (winner === "player" && score == 3) {
+//             awardModal();
+//             if (winner === "player" && score == 5) {
+//                 awardModal();
+//             }
+//         }
+//     }
+// }
+
+// function awardModal() {
+
+// }
