@@ -1,6 +1,6 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 const awardMessage = ["You Rock", "You're Sharp as Paper", "You Cut the Computer to Shreds"];
-const awardType = ["Bronze Champion", "Silver Champion", "Gold Champion"];
+const awardType = ["Bronze", "Silver", "Gold"];
 const gameScore = [2, 3, 5];
 
 function onLoad() {
@@ -18,51 +18,6 @@ function onLoad() {
     // hide game over message area
 }
 
-
-// document.getElementById("game-over").style.display = "none";
-
-// JS
-// window.onload = function() {
-//   document.getElementsByClassName("game-area").style.display = 'none';
-// };
-
-// Jquery
-
-// $(document).ready(function () {
-//     $(".game-area").hide();
-// });
-
-// Hide the game-area on page load
-// function hideClass() {
-//     document.getElementsByClassName("game-area").innerHTML.style.visibility="hidden";
-// }
-
-// window.onload = function(){  
-//     document.getElementsByClassName("game-area").innerHTML.style.display = "none";  
-//     }  
-
-
-// $(function() {
-//     $(".game-area").hide()
-// });
-
-// $(window).onload(function(){
-//     $(".game-area").hide();
-// });
-
-// document.onload = function() {
-//     (".game.area").hide();
-//   };
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     (".game.area").hide();
-// });
-
-// Hide the game area until player enters name and presses the PLAY key
-// $(".PLAY").click(function(){
-//   $(".game-area").show();
-// });
 
 /** Creates cookie to store player name. If player name not added and PLAY buttonn clicked, Alert msg appears */
 
@@ -202,13 +157,20 @@ function exitGame() {
 function displayAward(winner) {
     console.log("Display award for " + winner);
     let score = parseInt(document.getElementById(winner + "-score").textContent);
+    let awardImage = document.getElementById("trophy");
     if (winner === "player" && score == 2) {
         console.log("bronze");
         document.getElementById("award-modal").style.display="block";
         document.getElementById("award-statement").style.display="block";
-        document.getElementById("award-statement").style.display=awardType[0];
+        document.getElementById("award-statement").innerHTML=awardType[0];
         document.getElementById("award-message").style.display="block";
-        document.getElementById("award-message").style.display=awardMessage[0];
+        document.getElementById("award-message").innerHTML=awardMessage[0];
+        awardImage.src = `assets/images/${awardType[0]}.jpg`;
+
+        const span = document.getElementById("award-close");
+        span.onclick = function () {
+            document.getElementById("award-modal").style.display = "none";
     }  
-    
-    }
+}
+}
+        
