@@ -62,19 +62,26 @@ function onLoad() {
 
 // set player name
 function setPlayerName() {
-    if (document.myform.player.value == "") {
-        alert("Enter your first name");
-        return;
+    if (document.myform.player.value === "") {
+        document.getElementById("no-name-modal").style.display = "block";
     }
-    // Cookies are saved in name-value pairs
-    setCookie("player", document.myform.player.value, 1)
 
-    // show game area
-    document.getElementById("game-area").style.display = "block";
-    // hide login area
-    document.getElementById("login-area").style.display = "none";
-
+// Closes the "Enter Your Name" modal when player clicks on <span> (x)
+const span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    document.getElementById("no-name-modal").style.display = "none";
 }
+}
+
+
+// Cookies are saved in name-value pairs
+setCookie("player", document.myform.player.value, 1)
+
+// show game area
+document.getElementById("game-area").style.display = "block";
+// hide login area
+document.getElementById("login-area").style.display = "none";
+
 
 // get player name
 function getPlayerName() {
@@ -121,8 +128,12 @@ function playGame(playerChoice) {
     computerImage.alt = choices[computerChoice];
 
     if (choices[playerChoice] == choices[computerChoice]) {
-        alert("try again");
-        return;
+
+
+
+
+        // alert("try again");
+        // return;
     }
 
     let winner = getWinner(choices[playerChoice],
@@ -197,7 +208,7 @@ function displayAward(winner) {
 
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     if (winner === "player" && score == 2) {
-        console.log(getPlayerName() + " ,You Rock!");
+        document.getElementById("award-modal").style.display = "block";
         if (winner === "player" && score == 3) {
             console.log(getPlayerName() + " ,You're Sharp as Paper!");
             if (winner === "player" && score == 5) {

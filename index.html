@@ -44,7 +44,14 @@
                 Enter name: <input type="text" name="player" />
                 <input type="button" value="PLAY" onclick="setPlayerName();" />
             </form>
-        </div>
+            <div id="no-name-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <!-- <span class="close">&times;</span> -->
+                    <h3>Please enter your name</h3>
+                </div>
+            </div>
+
     </section>
     <section id="game-area">
         <div>
@@ -80,6 +87,10 @@
                 </div>
             </div>
         </div>
+        <div id="awards-modal" class="modal">
+            <div class="modal-content">
+                <!-- <span class="close">&times;</span> -->
+                <h3>Game Ended!</h3>
         <table>
             <tr>
                 <td>Beat the Computer 2 times in a row</td>
