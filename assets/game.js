@@ -1,6 +1,7 @@
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 const awardMessages = ["You Rock", "You're Sharp as Paper", "You Cut the Computer to Shreds"];
 const awardType = ["Bronze Champion", "Silver Champion", "Gold Champion"];
+const gameScore = [2, 3, 5];
 
 function onLoad() {
     // add button listeners
@@ -11,11 +12,14 @@ function onLoad() {
             playGame(playerChoice);
         });
     }
+
     // hide game area initially
     document.getElementById("game-area").style.display = "none";
     // hide game over message area
-    document.getElementById("game-over").style.display = "none";
 }
+
+
+    // document.getElementById("game-over").style.display = "none";
 
 // JS
 // window.onload = function() {
@@ -187,12 +191,7 @@ function checkGameOver(winner) {
         // show game over modal
         document.getElementById("game-over-modal").style.display = "block";
     }
-    // Get the <span> element that closes the modal
-    // var span = document.getElementsByClassName("close")[0];
-    // When the user clicks on <span> (x), close the modal
-    // span.onclick = function () {
-    //     document.getElementById("myModal").style.display = "none";
-    // }
+
 }
 
 function newGame() {
