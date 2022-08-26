@@ -133,7 +133,7 @@ function updateScore(winner) {
 function checkGameOver(winner) {
     let playerScore = parseInt(document.getElementById("player-score").textContent);
     let computerScore = parseInt(document.getElementById("computer-score").textContent);
-    if (playerScore + computerScore === 5) {
+    if (playerScore + computerScore === 10) {
         // show game over modal
         document.getElementById("game-over-modal").style.display = "block";
     }
@@ -144,14 +144,21 @@ function newGame() {
     // retain player name??
     console.log("player selected new game");
     document.getElementById("game-over-modal").style.display = "none";
-    document.getElementById("playerScore").reset();
-    // document.getElementById("computerScore").reset();
+    document.getElementById("player-score").innerHTML = 0;
+    document.getElementById("computer-score").innerHTML = 0;
+    document.getElementById("game-area").style.display = "none";
+    document.getElementById("login-area").style.display = "block";
+    document.getElementsByTagName("my-form").style.display = "";
 }
 
 function exitGame() {
     document.getElementById("game-over-modal").modal.close();
-    document.getElementById("game-area").style.display = "none";
-    document.getElementById("myForm").reset();
+    document.getElementById("player-score").innerHTML = 0;
+    document.getElementById("computer-score").innerHTML = 0;
+    document.getElementById("login-area").style.display = "block";
+    document.getElementById("myform").innerHTML = "";
+
+
 }
 
 function checkDisplayAward(winner) {
