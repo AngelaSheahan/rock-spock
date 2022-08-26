@@ -13,7 +13,7 @@
 
 <body onload="onLoad()">
     <header>
-        <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
+        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
     <section id="login-area">
         <div>
@@ -39,7 +39,7 @@
                     <td>Lizard</td>
                     <td>Paper</td>
                     <td>Rock</td>
-                
+
                 </tr>
             </table>
         </div>
@@ -62,13 +62,17 @@
             <h3><span id="messages"></span></h3>
         </div>
         <div>
-            <p>Make a Choice:</p>
-            <button id="rock" aria-label="Rock" data-choice="0" class="controls">Rock</button>
-            <button id="paper" aria-label="Paper" data-choice="1" class="controls">Paper</button>
-            <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">Scissors</button>
-            <button id="lizard" aria-label="Lizard" data-choice="3" class="controls">Lizard</button>
-            <button id="spock" aria-label="Spock" data-choice="4" class="controls">Spock</button>
+            <h2>Make a Choice:</h2>
+            <div class=btn-group>
+                <button id="rock" aria-label="Rock" data-choice="0" class="controls">Rock</button>
+                <button id="paper" aria-label="Paper" data-choice="1" class="controls">Paper</button>
+                <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">Scissors</button>
+                <button id="lizard" aria-label="Lizard" data-choice="3" class="controls">Lizard</button>
+                <button id="spock" aria-label="Spock" data-choice="4" class="controls">Spock</button>
+            </div>
         </div>
+
+
         <div class="player">
             <h3 class="scores">
                 <input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span>
