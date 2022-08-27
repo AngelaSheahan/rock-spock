@@ -132,7 +132,7 @@ footer {
     font-family: "chakra Petch", sans-serif;
     text-align: center;
     margin:auto;
-    /* align-items: center; */
+    align-items: center;
     display: none;
     /* Hidden by default */
     position: fixed;
