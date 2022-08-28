@@ -119,6 +119,13 @@ footer {
   vertical-align: middle;
 }
 
+#help-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 @media screen and (max-width: 600px) {
 
   input[type=text],
@@ -186,8 +193,8 @@ footer {
 
 .video-wrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }

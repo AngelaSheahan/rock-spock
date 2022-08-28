@@ -18,7 +18,6 @@ function onLoad() {
     // hide game over message area
 }
 
-
 /** Creates cookie to store player name. If player name not added and PLAY buttonn clicked, Alert msg appears */
 
 // set player name
@@ -33,6 +32,7 @@ function setPlayerName() {
     } else {
         // Cookies are saved in name-value pairs
         setCookie("player", document.myform.player.value, 1);
+        document.getElementById("messages").textContent = "Welcome " + getPlayerName() + "!";
         // show game area
         document.getElementById("game-area").style.display = "block";
         // hide login area
@@ -81,8 +81,10 @@ function deleteCookie(name) {
 }
 
 function playGame(playerChoice) {
+    /* coputer chooses */
     let computerChoice = Math.floor(Math.random() * 5);
 
+    /* display the hands chosen */
     let playerImage = document.getElementById("player-image");
     playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
     playerImage.alt = choices[playerChoice];
@@ -135,8 +137,6 @@ function updateScore(winner) {
     document.getElementById(winner + "-score").textContent = score + 1;
 }
 
-
-
 function checkGameOver() {
     let playerScore = parseInt(document.getElementById("player-score").textContent);
     let computerScore = parseInt(document.getElementById("computer-score").textContent);
@@ -154,8 +154,22 @@ function checkGameOver() {
 }
 
 function newGame() {
+    commonGameReset();
+    document.getElementById("messages").textContent = "New Game " + getPlayerName() + "!";
+}
+
+function exitGame() {
+    commonGameReset();
+    deleteCookie(getPlayerName());
+    document.getElementById("player").value="";
+    document.getElementById("messages").textContent = "";
+    document.getElementById("game-area").style.display = "none";
+    document.getElementById("login-area").style.display = "block";
+    document.getElementById("game-banner").style.display = "block";
+}
+
+function commonGameReset() {
     document.getElementById("game-over-new-modal").style.display = "none";
-    document.getElementById("messages").textContent = "New Game!";
     document.getElementById("player-score").innerHTML = 0;
     document.getElementById("computer-score").innerHTML = 0;
     let playerImage = document.getElementById("player-image");
@@ -164,18 +178,6 @@ function newGame() {
     let computerImage = document.getElementById("computer-image");
     computerImage.src = "assets/images/rocpapscilizspo.png";
     computerImage.alt = "Rock, Paper, Scissors, Lizard, Spock";
-}
-
-function exitGame() {
-    deleteCookie(getPlayerName());
-    document.getElementById("game-over-new-modal").style.display = "none";
-    document.getElementById("player-score").innerHTML = 0;
-    document.getElementById("computer-score").innerHTML = 0;
-    document.getElementById("messages").textContent = "";
-    document.getElementById("game-area").style.display = "none";
-    document.getElementById("login-area").style.display = "block";
-    document.getElementById("game-banner").style.display = "block";
-    document.getElementsByName("myform").innerHTML.reset();
 }
 
 function checkDisplayAward(winner) {
