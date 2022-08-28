@@ -15,15 +15,6 @@
     <header>
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
-    <section id="game-banner">
-        <div class="video-wrapper">
-            <iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
-                title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div>
-            <img src="assets/images/rocpapscislizsp1.png" style="width:100%;" alt="Rock, Paper, Scissors, Lizard, Spock">
-        </div>
-    </section>
     <section id="login-area">
         <div>
             <h3>Here's How to Play</h3>
@@ -71,6 +62,12 @@
             </div>
         </div>
     </section>
+    <section id="game-banner">
+        <div class="video-wrapper">
+            <iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
+                title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
     <section id="game-area">
         <div class=btn-group>
             <button id="rock" aria-label="Rock" data-choice="0" class="controls">ROCK</button>
@@ -85,11 +82,13 @@
         <div class="hand-row">
             <div class="hand-column">
                 <h3>Player score: <span id="player-score">0</span></h3>
-                <img id="player-image" class="responsive-hand">
+                <img id="player-image" src="assets/images/rocpapscilizspo.png"
+                    alt="Rock, Paper, Scissors, Lizard, Spock" class="responsive-hand">
             </div>
             <div class="hand-column">
                 <h3>Computer score: <span id="computer-score">0</span></h3>
-                <img id="computer-image" class="responsive-hand">
+                <img id="computer-image" src="assets/images/rocpapscilizspo.png"
+                    alt="Rock, Paper, Scissors, Lizard, Spock" class="responsive-hand">
             </div>
         </div>
         <div id="game-over-new-modal" class="modal">

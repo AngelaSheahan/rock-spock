@@ -75,6 +75,11 @@ function getCookie(cname) {
     return "";
 }
 
+//deletes named cookie
+function deleteCookie(name) {
+    document.cookie = name + "=;" + "expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+}
+
 function playGame(playerChoice) {
     let computerChoice = Math.floor(Math.random() * 5);
 
@@ -151,12 +156,19 @@ function checkGameOver() {
 
 function newGame() {
     document.getElementById("game-over-new-modal").style.display = "none";
+    document.getElementById("messages").textContent = "New Game!";
     document.getElementById("player-score").innerHTML = 0;
     document.getElementById("computer-score").innerHTML = 0;
-    document.getElementById("messages").textContent = "";
+    let playerImage = document.getElementById("player-image");
+    playerImage.src = "assets/images/rocpapscilizspo.png";
+    playerImage.alt = "Rock, Paper, Scissors, Lizard, Spock";
+    let computerImage = document.getElementById("computer-image");
+    computerImage.src = "assets/images/rocpapscilizspo.png";
+    computerImage.alt = "Rock, Paper, Scissors, Lizard, Spock";
 }
 
 function exitGame() {
+    deleteCookie(getPlayerName());
     document.getElementById("game-over-new-modal").style.display = "none";
     document.getElementById("player-score").innerHTML = 0;
     document.getElementById("computer-score").innerHTML = 0;
