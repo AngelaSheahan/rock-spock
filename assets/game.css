@@ -1,189 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
-/* Main view setup */
-
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-    font-family: "Chakra Petch", sans-serif;
-    margin: 0;
-    background: yellowgreen;
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  background: lightgreen;
 }
 
 .center {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-h1, h2, h3 {
-    text-align: center;
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
-table, td, th {  
-    text-align: left;
-    text-decoration: none;
-    font-weight: 100;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    padding: 15px;
-  }
+table,
+td,
+th {
+  text-align: left;
+  text-decoration: none;
+  font-weight: 100;
+}
 
-  input[type=text], select {
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+input[type=text],
+select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 10%;
+  background-color: limegreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: olive;
+}
+
+@media screen and (max-width: 600px) {
+
+  input[type=text],
   input[type=button] {
-    width: 10%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 100%;
+    margin-top: 0;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-  @media screen and (max-width: 600px) {
-    input[type=text], input[type=button] {
-      width: 100%;
-      margin-top: 0;
-    }
 }
 
-  .btn-group {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
+.btn-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  }
+button {
+  flex-grow: 1;
+  flex-basis: auto;
+  background-color: limegreen;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
-  button {
-    flex-grow: 1;
-    flex-basis: auto;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    /* width: 13%;
-    height: 50%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 2px 2px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px; */
-
-    /* /* padding: 5px 5px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px; */
-    /* cursor: pointer; */
-  }
-
-  button:hover {
-    background-color: #45a049;
-  }
-
-  div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+button:hover {
+  background-color: olive;
+}
 
 footer {
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 5px, 0px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px, 0px;
 }
 
-/* sourced from w3schools.com */
+/* Modal CSS sourced from w3schools.com */
 /* The Modal (background) */
 .modal {
-    font-family: "chakra Petch", sans-serif;
-    text-align: center;
-    margin:auto;
-    align-items: center;
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content/Box */
 .modal-content {
-  vertical-align: middle;
-    align-items: center;
-    display: flex;
-    min-height: 100%;
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    /* width: 80%; */
-    /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+.award-body {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
 
-/* #game-over-new-modal {
-    align-items: center;
-} */
+/* make youtube video responsive https://css-tricks.com/fluid-width-video/#aa-iframe-video-youtube-vimeo-etc */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

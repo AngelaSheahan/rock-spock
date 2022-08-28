@@ -37,6 +37,8 @@ function setPlayerName() {
         document.getElementById("game-area").style.display = "block";
         // hide login area
         document.getElementById("login-area").style.display = "none";
+        // hide banner area
+        document.getElementById("game-banner").style.display = "none";
     }
 }
 
@@ -148,6 +150,7 @@ function newGame() {
     document.getElementById("computer-score").innerHTML = 0;
     document.getElementById("game-area").style.display = "none";
     document.getElementById("login-area").style.display = "block";
+    document.getElementById("game-banner").style.display = "block";
 }
 
 function exitGame() {
@@ -156,9 +159,8 @@ function exitGame() {
     document.getElementById("computer-score").innerHTML = 0;
     document.getElementById("game-area").style.display = "none";
     document.getElementById("login-area").style.display = "block";
+    document.getElementById("game-banner").style.display = "block";
     document.getElementsByName("myform").innerHTML.reset();
-
-
 }
 
 function checkDisplayAward(winner) {
@@ -176,7 +178,7 @@ function checkDisplayAward(winner) {
 
 function displayAward(awardIndex, awardImage) {
     document.getElementById("award-modal").style.display = "block";
-    document.getElementById("award-statement").innerHTML = awardType[awardIndex];
+    document.getElementById("award-type").innerHTML = awardType[awardIndex];
     document.getElementById("award-message").innerHTML = awardMessage[awardIndex];
     awardImage.src = `assets/images/${awardType[awardIndex]}.jpg`;
     const span = document.getElementById("award-close");

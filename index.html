@@ -11,19 +11,20 @@
     <script src="assets/game.js"></script>
 </head>
 
-
 <body onload="onLoad()">
     <header>
-        <div id="game-banner">
-            <h2>Rock, Paper, Scissors, Lizard, Spock</h1>
-                <div><iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY"
-                        title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
-                    </iframe></div>
-                <div>
-                    <img src="assets/images/rocpapscislizsp1.png" alt="Rock, Paper, Scissors, Lizard, Spock"
-                        class="center"></div>
-
+        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
+    <section id="game-banner">
+        <div class="video-wrapper">
+            <iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
+                title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <img src="assets/images/rocpapscislizsp1.png" style="width:100%;" alt="Rock, Paper, Scissors, Lizard, Spock"
+                class="center">
+        </div>
+    </section>
     <section id="login-area">
         <div>
             <h3>Here's How to Play</h3>
@@ -66,11 +67,10 @@
             <div id="no-name-modal" class="modal">
                 <div class="modal-content">
                     <span id="no-name-close" class="close">&times;</span>
-                    <!-- <span class="close">&times;</span> -->
-                    <h3>Please enter your name</h3>
+                    <p>Please enter your name</p>
                 </div>
             </div>
-
+        </div>
     </section>
     <section id="game-area">
         <div>
@@ -113,31 +113,31 @@
 
         <div id="award-modal" class="modal">
             <div class="modal-content">
-
                 <header>
                     <span id="award-close" class="close">&times;</span>
                 </header>
                 <div class="award-body">
-                    <p id="award-statement"></p>
+                    <p id="award-type"></p>
                     <p id="award-message"></p>
                     <img id="trophy">
                 </div>
             </div>
         </div>
-
-
-        <table>
-            <tr>
-                <td>Beat the Computer 2 times in a row</td>
-                <td>Bronze Champion</td>
-            </tr>
-            <tr>
-                <td>Beat the Computer 3 times in a row</td>
-                <td>Silver Champion</td>
-            </tr>
-            <td>Beat the Computer 5 times in a row</td>
-            <td>Gold Champion</td>
-        </table>
+        <div>
+            <table>
+                <tr>
+                    <td>Beat the Computer 2 times in a row</td>
+                    <td>Bronze Champion</td>
+                </tr>
+                <tr>
+                    <td>Beat the Computer 3 times in a row</td>
+                    <td>Silver Champion</td>
+                </tr>
+                <tr>
+                    <td>Beat the Computer 5 times in a row</td>
+                    <td>Gold Champion</td>
+                </tr>
+            </table>
         </div>
     </section>
 
