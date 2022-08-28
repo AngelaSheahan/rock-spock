@@ -125,7 +125,7 @@ function getWinner(playerChoice, computerChoice) {
 // Update the winners score.
 function updateScore(winner) {
     console.log("winner : ", winner)
-    document.getElementById("messages").textContent = ((winner === "computer") ? "computer" : getPlayerName()) + " wins";
+    document.getElementById("messages").textContent = ((winner === "computer") ? "Computer" : getPlayerName()) + " wins";
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     document.getElementById(winner + "-score").textContent = score + 1;
 }
@@ -138,26 +138,29 @@ function checkGameOver() {
     if (playerScore + computerScore === 10) {
         // show game over modal
         document.getElementById("game-over-new-modal").style.display = "block";
-        document.getElementById("game-winner").innerHTML = playerScore > computerScore ? getPlayerName() + " wins game" : "Computer wins game";
+        if (playerScore > computerScore) {
+            document.getElementById("game-winner").innerHTML = getPlayerName() + " wins game";
+        } else if (computerScore > playerScore) {
+            document.getElementById("game-winner").innerHTML = "Computer wins game";
+        } else {
+            document.getElementById("game-winner").innerHTML = "The game is tied";
+        }
     }
 
 }
 
 function newGame() {
-    // retain player name??
-    console.log("player selected new game");
     document.getElementById("game-over-new-modal").style.display = "none";
     document.getElementById("player-score").innerHTML = 0;
     document.getElementById("computer-score").innerHTML = 0;
-    document.getElementById("game-area").style.display = "none";
-    document.getElementById("login-area").style.display = "block";
-    document.getElementById("game-banner").style.display = "block";
+    document.getElementById("messages").textContent = "";
 }
 
 function exitGame() {
     document.getElementById("game-over-new-modal").style.display = "none";
     document.getElementById("player-score").innerHTML = 0;
     document.getElementById("computer-score").innerHTML = 0;
+    document.getElementById("messages").textContent = "";
     document.getElementById("game-area").style.display = "none";
     document.getElementById("login-area").style.display = "block";
     document.getElementById("game-banner").style.display = "block";

@@ -112,6 +112,12 @@ footer {
   padding: 5px, 0px;
 }
 
+.award-body {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
 /* Modal CSS sourced from w3schools.com */
 /* The Modal (background) */
 .modal {
@@ -149,12 +155,6 @@ footer {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-.award-body {
-  text-align: center;
-  align-items: center;
-  vertical-align: middle;
 }
 
 /* make youtube video responsive https://css-tricks.com/fluid-width-video/#aa-iframe-video-youtube-vimeo-etc */

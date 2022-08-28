@@ -73,29 +73,21 @@
         </div>
     </section>
     <section id="game-area">
+        <div class=btn-group>
+            <button id="rock" aria-label="Rock" data-choice="0" class="controls">ROCK</button>
+            <button id="paper" aria-label="Paper" data-choice="1" class="controls">PAPER</button>
+            <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">SCISSORS</button>
+            <button id="lizard" aria-label="Lizard" data-choice="3" class="controls">LIZARD</button>
+            <button id="spock" aria-label="Spock" data-choice="4" class="controls">SPOCK</button>
+        </div>
         <div>
+            <h3>Player score: <span id="player-score">0</span> Computer score: <span id="computer-score">0</span></h3>
             <h3><span id="messages"></span></h3>
         </div>
-        <h2>Make a Choice:</h2>
-        <div>
-            <div class=btn-group>
-                <button id="rock" aria-label="Rock" data-choice="0" class="controls">ROCK</button>
-                <button id="paper" aria-label="Paper" data-choice="1" class="controls">PAPER</button>
-                <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">SCISSORS</button>
-                <button id="lizard" aria-label="Lizard" data-choice="3" class="controls">LIZARD</button>
-                <button id="spock" aria-label="Spock" data-choice="4" class="controls">SPOCK</button>
-            </div>
-        </div>
-
-
         <div class="player">
-            <h3 class="scores">
-                <input-type="text" id="fname" name="fname"> score: <span id="player-score">0</span>
-            </h3>
             <img id="player-image" class="center">
         </div>
         <div class="computer">
-            <h3 class="scores"> Computer score: <span id="computer-score">0</span></h3>
             <img id="computer-image" class="center">
         </div>
         <div id="game-over-new-modal" class="modal">
@@ -137,9 +129,7 @@
             </table>
         </div>
     </section>
-
     <footer>
-
     </footer>
 </body>
 
