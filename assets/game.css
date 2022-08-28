@@ -11,15 +11,6 @@ body {
   background: yellowgreen;
 }
 
-.center {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 h1,
 h2,
 h3 {
@@ -70,15 +61,6 @@ input[type=submit]:hover {
   background-color: olive;
 }
 
-@media screen and (max-width: 600px) {
-
-  input[type=text],
-  input[type=button] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
 .btn-group {
   display: flex;
   flex-flow: row wrap;
@@ -116,6 +98,44 @@ footer {
   text-align: center;
   align-items: center;
   vertical-align: middle;
+}
+
+.responsive-hand {
+  width: 400px;
+  height: 400px;
+}
+
+.hand-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.hand-column {
+  flex: 50%;
+  padding: 0 4px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+
+  input[type=text],
+  input[type=button] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .hand-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .responsive-hand {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* Modal CSS sourced from w3schools.com */

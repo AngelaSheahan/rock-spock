@@ -21,8 +21,7 @@
                 title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
         </div>
         <div>
-            <img src="assets/images/rocpapscislizsp1.png" style="width:100%;" alt="Rock, Paper, Scissors, Lizard, Spock"
-                class="center">
+            <img src="assets/images/rocpapscislizsp1.png" style="width:100%;" alt="Rock, Paper, Scissors, Lizard, Spock">
         </div>
     </section>
     <section id="login-area">
@@ -81,14 +80,17 @@
             <button id="spock" aria-label="Spock" data-choice="4" class="controls">SPOCK</button>
         </div>
         <div>
-            <h3>Player score: <span id="player-score">0</span> Computer score: <span id="computer-score">0</span></h3>
             <h3><span id="messages"></span></h3>
         </div>
-        <div class="player">
-            <img id="player-image" class="center">
-        </div>
-        <div class="computer">
-            <img id="computer-image" class="center">
+        <div class="hand-row">
+            <div class="hand-column">
+                <h3>Player score: <span id="player-score">0</span></h3>
+                <img id="player-image" class="responsive-hand">
+            </div>
+            <div class="hand-column">
+                <h3>Computer score: <span id="computer-score">0</span></h3>
+                <img id="computer-image" class="responsive-hand">
+            </div>
         </div>
         <div id="game-over-new-modal" class="modal">
             <div class="modal-content">
