@@ -92,7 +92,7 @@ function playGame(playerChoice) {
     computerImage.alt = choices[computerChoice];
 
     if (choices[playerChoice] == choices[computerChoice]) {
-        document.getElementById("messages").textContent = "Tie";
+        document.getElementById("messages").textContent = "Round is tied";
         return;
     }
 
@@ -130,7 +130,7 @@ function getWinner(playerChoice, computerChoice) {
 // Update the winners score.
 function updateScore(winner) {
     console.log("winner : ", winner)
-    document.getElementById("messages").textContent = ((winner === "computer") ? "Computer" : getPlayerName()) + " wins";
+    document.getElementById("messages").textContent = ((winner === "computer") ? "Computer" : getPlayerName()) + " wins this round";
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     document.getElementById(winner + "-score").textContent = score + 1;
 }
@@ -144,14 +144,13 @@ function checkGameOver() {
         // show game over modal
         document.getElementById("game-over-new-modal").style.display = "block";
         if (playerScore > computerScore) {
-            document.getElementById("game-winner").innerHTML = getPlayerName() + " wins game";
+            document.getElementById("game-winner").innerHTML = getPlayerName() + " wins game " + playerScore + " - " + computerScore;
         } else if (computerScore > playerScore) {
-            document.getElementById("game-winner").innerHTML = "Computer wins game";
+            document.getElementById("game-winner").innerHTML = "Computer wins game " + computerScore + " - " + playerScore;
         } else {
-            document.getElementById("game-winner").innerHTML = "The game is tied";
+            document.getElementById("game-winner").innerHTML = "The game is tied " + computerScore + " - " + playerScore;
         }
     }
-
 }
 
 function newGame() {
