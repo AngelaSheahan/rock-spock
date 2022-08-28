@@ -87,8 +87,8 @@ function playGame(playerChoice) {
     computerImage.alt = choices[computerChoice];
 
     if (choices[playerChoice] == choices[computerChoice]) {
-        // alert("try again");
-        // return;
+        document.getElementById("messages").textContent = "Tie";
+        return;
     }
 
     let winner = getWinner(choices[playerChoice],
@@ -98,7 +98,7 @@ function playGame(playerChoice) {
 
     checkDisplayAward(winner);
 
-    checkGameOver(winner);
+    checkGameOver();
 }
 
 // See who the winners is.
@@ -132,12 +132,13 @@ function updateScore(winner) {
 
 
 
-function checkGameOver(winner) {
+function checkGameOver() {
     let playerScore = parseInt(document.getElementById("player-score").textContent);
     let computerScore = parseInt(document.getElementById("computer-score").textContent);
     if (playerScore + computerScore === 10) {
         // show game over modal
         document.getElementById("game-over-new-modal").style.display = "block";
+        document.getElementById("game-winner").innerHTML = playerScore > computerScore ? getPlayerName() + " wins game" : "Computer wins game";
     }
 
 }
