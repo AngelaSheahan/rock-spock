@@ -13,11 +13,15 @@
 ![No Name Added error message in the form of a Modal](/assets/images/NoNameModal.png)
 
 ### 3. **Game Screen**<br/>This is divided into 3 areas:<br/>
-**Player Game Area:**<br/> The players' name is carried through to this screen (The player name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice list); in this case the message is, 'Welcome Angela!'.<br/>
-A Score Counter appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A Pictorial Image of the game, *'Rock, Paper, Scissors, Spock'*, appears underneath the welcome message.<br/>**Computer Game Area:**<br/>The player is playing against the computer, so a Computer score counter: 0 is displayed. A pictorial representation of game also appears.<br/>A **List of the game awards system rules**<br/><br/>
+### **Player Game Area:**<br/> The players' name is carried through to this screen (The player name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice list); in this case the message is, 'Welcome Angela!'.<br/>
+### A Score Counter appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A Pictorial Image of the game, *'Rock, Paper, Scissors, Spock'*, appears underneath the welcome message.<br/>**Computer Game Area:**<br/>The player is playing against the computer, so a Computer score counter: 0 is displayed. A pictorial representation of game also appears.<br/>A **List of the game awards system rules**<br/><br/>
 ![Game Screen Part 1](/assets/images/gamescreen1.png)
 ![Game Screen Part 1](/assets/images/gamescreen2.png)
 
+### 4. **How to Play**<br/>
+### The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winner rules are displayed on the Homepage) is then updated/increased.<br/> <br/>
+![Player wins screen](/assets/images/playerwins.png)
+![Computer wins screen](/assets/images/computerwins.png)
 
 
 
