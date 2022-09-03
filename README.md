@@ -24,8 +24,9 @@
 ![Computer wins screen](/assets/images/computerwins.png) <br>
 ### Where both the player and the computer pick the same hand symbol, no one wins. The score counter is unchanged, and a 'Round is tied' message appears at the top the screen above the players score. <br/><br/>
 ![Round is tied screen](/assets/images/tiedround.png) </br>
-### **5. The Awards Scheme**<br/> When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>>![Bronze](/assets/images/bronzewinnerModal.png)<br/><br/>
-### When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.<br/><br/>![Silver](/assets/images/silverwinnerModal.png)<br/><br/>### When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/><br/>![Gold](/assets/images/goldwinnerModal.png)<br/><br/>
+### **5. The Awards Scheme**<br/> When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>![Bronze](/assets/images/bronzewinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.<br/><br/>![Silver](/assets/images/silverwinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Gold award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/><br/>![Gold](/assets/images/goldwinnerModal.png)<br/><br/>
+### **New Game/Exist Game Section**<br/>When the game counter reached 10 rounds (excluding tied rounds), a Modal appears on the screen. The player can click the 'New Game' button or the 'Exit Game' button. <br/><br/>![New Game/Exit Game Modal](/assets/images/selectexitgameonModal.png)<br/><br/> If the player select a New Game, their name is carried forward to this screen and the player and computer scores are initialised.<br/><br/>![New Game screen](/assets/images/newgamescreen.png)<br/><br/>
+
 
 
 
