@@ -17,6 +17,10 @@ h3 {
   text-align: center;
 }
 
+p {
+  padding-left: 15px;
+}
+
 table,
 td,
 th {
@@ -35,6 +39,7 @@ td {
   padding: 15px;
 }
 
+
 input[type=text],
 select {
   width: 30%;
@@ -45,6 +50,12 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+
+.form input[type="text"] {
+  padding-left: 10px;
+}
+
 
 input[type=button] {
   width: 10%;
