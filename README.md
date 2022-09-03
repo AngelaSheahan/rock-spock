@@ -2,7 +2,22 @@
 List of features:
 
 - Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.
+![login Screen Part 1](/assets/images/screen1part1.png)
+![login Screen part 2](/assets/images/screen1part2.png)
+
 - If the player does not enter his/her name, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.
+![No Name Added error message in the form of a Modal](/assets/images/NoNameModal.png)
+
+- After entering a player name, the player is directed to the game screen. As you can see the players' name is carried through to this screen (The player name is stored in a Cookie). 
+     - The 'Welcome Angela!' message appears at the top of the screen. 
+     - A score counter appears on the line below the welcome message eg. 'Player Score: 0'.
+     - A pictorial image of the game, 'Rock, Paper, Scissors, Spock', appears underneath the welcome message.
+![Game Screen Part 1](/assets/images/gamescreen1.png)
+![Game Screen Part 1](/assets/images/gamescreen2.png)
+
+
+
+
 
 
 
