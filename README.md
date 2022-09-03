@@ -1,20 +1,20 @@
+# ROCK, PAPER, SCISSORS, LIZARD, SPOCK<br/>
+<br/>This game was first introduced in the television series, The Big Bang Theory. It is a game of chance, where the player selects one of five hand symbols, Rock, Paper, Scissors, Lizard, Spock. The Computer is then programmed to randomly select one of these hand symbols also. Either the player or the computer wins based on inbuilt rules eg. Rock beats Lizard and Scissors, etc. There are 5 rules displayed on the Homepage of the game. Each game consists of 10 rounds. The winner is the one with the highest score. There is also an inbuilt awards system that only applies to the player. When the player wins 2 rounds in the game he/she is awarded a Bronze trophy, 3 rounds, a Silver trophy and 5 rounds, a Gold trophy. These awards are displayed via modals. When the game is over the player can opt to exit the game or play a new game.
 
-List of features:
+## List of features:
 
-1. Login form <br/>Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.
+### 1. **Game Introduction Screen/Homepage** <br/>This consists of a:<br/>The Login form<br>The Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.<br/><br/>
+### A 'How to Play' section <br/>This gives a basic overview of the game and the rules on how to determine the round winner.
+
 ![login Screen Part 1](/assets/images/screen1part1.png)
 ![login Screen part 2](/assets/images/screen1part2.png)
 
-2. Error Message (Modal)<br/>If the player does not enter his/her name, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.
+### 2. **Error Message (Modal)**<br/>If the player does not enter his/her name, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.
 ![No Name Added error message in the form of a Modal](/assets/images/NoNameModal.png)
 
-3. Game Screen.<br/>This is divided into 3 areas:<br/>
+### 3. **Game Screen**<br/>This is divided into 3 areas:<br/>
 **Player Game Area:**<br/> The players' name is carried through to this screen (The player name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice list); in this case the message is, 'Welcome Angela!'.<br/>
-A score counter appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A pictorial image of the game, 'Rock, Paper, Scissors, Spock', appears underneath the welcome message.
-2. Computer Game Area:
-     - The player is playing against the computer, so a Computer score counter: 0 is displayed
-     - A pictorial representation of game also appears.
-3. A description of the game awards system.
+A Score Counter appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A Pictorial Image of the game, *'Rock, Paper, Scissors, Spock'*, appears underneath the welcome message.<br/>**Computer Game Area:**<br/>The player is playing against the computer, so a Computer score counter: 0 is displayed. A pictorial representation of game also appears.<br/>A **List of the game awards system rules**<br/><br/>
 ![Game Screen Part 1](/assets/images/gamescreen1.png)
 ![Game Screen Part 1](/assets/images/gamescreen2.png)
 
