@@ -1,5 +1,5 @@
 # ROCK, PAPER, SCISSORS, LIZARD, SPOCK<br/>
-<br/>This game was first introduced in the television series, The Big Bang Theory. It is a game of chance, where the player selects one of five hand symbols, Rock, Paper, Scissors, Lizard, Spock. The Computer is then programmed to randomly select one of these hand symbols also. Either the player or the computer wins based on inbuilt rules eg. Rock beats Lizard and Scissors, etc. There are 5 rules displayed on the Homepage of the game. Each game consists of 10 rounds. The winner is the one with the highest score. There is also an inbuilt awards system that only applies to the player. When the player wins 2 rounds in the game he/she is awarded a Bronze trophy, 3 rounds, a Silver trophy and 5 rounds, a Gold trophy. These awards are displayed via modals. When the game is over the player can opt to exit the game or play a new game.
+### <br/>This game was first introduced in the television series, The Big Bang Theory. It is a game of chance, where the player selects one of five hand symbols, Rock, Paper, Scissors, Lizard, Spock. The Computer is then programmed to randomly select one of these hand symbols also. Either the player or the computer wins based on inbuilt rules eg. Rock beats Lizard and Scissors, etc. There are 5 rules displayed on the Homepage of the game. Each game consists of 10 rounds. The winner is the one with the highest score. There is also an inbuilt awards system that only applies to the player. When the player wins 2 rounds in the game he/she is awarded a Bronze trophy, 3 rounds, a Silver trophy and 5 rounds, a Gold trophy. These awards are displayed via modals. When the game is over the player can opt to exit the game or play a new game.
 
 ## List of features:
 
@@ -15,13 +15,24 @@
 ### 3. **Game Screen**<br/>This is divided into 3 areas:<br/>
 ### **Player Game Area:**<br/> The players' name is carried through to this screen (The player name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice list); in this case the message is, 'Welcome Angela!'.<br/>
 ### A Score Counter appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A Pictorial Image of the game, *'Rock, Paper, Scissors, Spock'*, appears underneath the welcome message.<br/>**Computer Game Area:**<br/>The player is playing against the computer, so a Computer score counter: 0 is displayed. A pictorial representation of game also appears.<br/>A **List of the game awards system rules**<br/><br/>
-![Game Screen Part 1](/assets/images/gamescreen1.png)
-![Game Screen Part 1](/assets/images/gamescreen2.png)
+![Game Screen section 1](/assets/images/gamescreen1.png)
+![Game Screen section 2](/assets/images/gamescreen2.png)
 
 ### 4. **How to Play**<br/>
-### The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winner rules are displayed on the Homepage) is then updated/increased.<br/> <br/>
+### The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winner rules are displayed on the Homepage) is then updated/increased.<br/><br/>
 ![Player wins screen](/assets/images/playerwins.png)
-![Computer wins screen](/assets/images/computerwins.png)
+![Computer wins screen](/assets/images/computerwins.png) <br>
+### Where both the player and the computer pick the same hand symbol, no one wins. The score counter is unchanged, and a 'Round is tied' message appears at the top the screen above the players score. <br/><br/>
+![Round is tied screen](/assets/images/tiedround.png) </br>
+### **5. The Awards Scheme**<br/> When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>>![Bronze](/assets/images/bronzewinnerModal.png)<br/><br/>
+### When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.<br/><br/>![Silver](/assets/images/silverwinnerModal.png)<br/><br/>### When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/><br/>![Gold](/assets/images/goldwinnerModal.png)<br/><br/>
+
+
+
+
+
+
+
 
 
 
