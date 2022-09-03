@@ -1,3 +1,20 @@
+
+List of features:
+
+- Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.
+- If the player does not enter his/her name, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.
+
+
+
+
+
+
+
+
+
+
+
+
 As a player I want to view the game rules before I decide to play.
 - ~~Create a table of rules.~~
 The following items to appear on the first page:
