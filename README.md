@@ -146,22 +146,19 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
  **Result:**
  As a player, I can easily play a new game or exit the existing game but clicking on the 'New Game' or 'Exit Game' buttons on the Game Ended Modal. If I click the 'New Game' button, the game window will open, and my name will appear as a message 'New Game Angela!' at the top of the screen, underneath the choice buttons. The Player Score and Computer Score will revert back to zero. If I click the Exist game button, the game homepage will appear.<br/>
 
-
-
-
-
-
-
-
-
-
-
-
+### UNFIXED BUGS
+There are no unfixed bugs, thank goodness!!
 
 ### LEARNINGS
-- Mentor advised to re-write if/else statement in my JavaScript file as a Switch Statement. However on my research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
+Mentor advised to re-write if/else statement in my JavaScript file as a Switch Statement. However on my research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
 
 ### DEPLOYMENT
+- In the GitHub repository navigate to the settings tab.
+- From the Source Section drop-down menu, select the Master Branch.
+- Once the Master Branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here
+
 
 ### CITATION OF SOURCES
 
