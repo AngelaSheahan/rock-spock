@@ -63,9 +63,10 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |Modal| Modal to pop up stating 'Please enter your name'|Clicked PLAY button without entering name|Correct Modal appeared|
 |Game window|Game window to open with 'Welcome[playername]' msg on top| Player name entered in form field and PLAY btn clicked| Game window opened with e.g. Welcome Angela! displayed|
 |Rock, Paper, Scissors, Lizard, Spock btns|A pic of representing player choice to appear under 'Player score' field.<br/>A pic representing the computers random choice to appear under 'Computer score' field.<br/>The winner of this to appear above score field e.g. 'Computer wins this round'.<br/>The winners score to be entered in the score field e.g. 'Computer score: 1.|Click on btn|All results were as expected|
-|Bronze Award Modal|This modal pops up when player wins twice in a row|player selects btn and luckily wins twice in a row|Bronze Award Modal appears|
-|Identical hand images.<br/>'Round is tied' message.<br/> Score counter.<br/>Round counter.|'Round is tied' message to appear when identical hand images are displayed.<br/>Score counter is unchanged.<br/>The Round counter is unchanged.|Player clicks button and computer selection is the same.|Screen displays the same hand images<br/>'Round is tied' message appears.<br/>Score counter remain unchanged.<br/> Tied round is not included in the round counter; hence Round counter remains unchanged|
-|
+|Bronze Award Modal|This modal pops up when player wins twice.|player make their choice by clicking on a btn and luckily wins twice.|Bronze Award Modal appears|
+|Identical hand images.<br/>'Round is tied' message.<br/> Score counter.<br/>Round counter.|'Round is tied' message to appear when identical hand images are displayed.<br/>Score counter is unchanged.<br/>The Round counter is unchanged.|Player makes a choice by clicking a button. Computer makes a random selection. Both choices are the same.|Screen displays the same hand images.<br/>'Round is tied' message appears.<br/>Score counter remain unchanged.<br/> Tied round is not included in the round counter; hence Round counter remains unchanged.|
+|Silver Award Modal|This modal pops up when player wins three times.|A player makes their choice by clicking on a btn and wins three times.|Silver Award Modal appears|
+|Gold Award Modal|This modal pops up when player wins five times.|Player makes their choice by clicking on  btn and wins five times.|Gold Award Modal appears|
 
 
 
