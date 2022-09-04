@@ -86,61 +86,66 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |The Exit Game Btn on the Game Ended Modal|The Homepage screen to appear.<br/>The name field will be empty.|Player clicks on the Exit Game btn.|All results were as expected.|
 
 ### Testing User Stories
-<u>Expectation:</u>
+ **Expectation:</u>
  As a player, I want to be provided with clear, concise instructions on how to play the game.<br/>
 
- <u>Result:</u>
+ **Result:**
  As a player, I understand how to play this game as this information is displayed clearly int the 'How to play' section and the 'Rules to determines round winner' table on the homepage of the game.<br/>
 
- <u>Expectation:</u>
+ **Expectation:**
  As a player, I want the homepage of the game to be easy to navigate and eye catching so as to peek my interest to make me actually want to play the game.<br/>
  
-<u>Result:</u>
+ **Result:**
  As a player, I can easily navigate the homepage; the content is clear and concise, the page is not overloaded with information and the embedded youtube video is very funny and demonstrate to me how the game is played.<br/>
 
-  <u>Expectation:</u>
+ **Expectation:**
  As a player, I want to be able to login into the game without difficulty.<br/>
 
- <u>Result:</u>
+ **Result:**
  As a player, I can login without difficulty by entering me name and then clicking on the PLAY button. If I do not enter my name and click on the PLAY button, a modal with pop-up to remind me to enter my name before I can proceed with the game.<br/>
 
- <u>Expectation:</u>
+ **Expectation:**
  As a player, if I am going to give my name I want my login name to be captured and used in the game.<br/>
 
- <u>Result:</u>
+ **Result:</u>
  As a player, after I enter ny name and click on the PLAY button, I see a 'Welcome [player name]!' message appear on the game screen. e.g. 'Welcome Angela!'. Also, when I win a round, the message 'Angela wins this round' appears. In addition, if I win the game, my name is used in the winner messge e.g. 'Angela wins game 7 - 3'. Finally, if I opt to play a new game, the message 'New Game Angela!' appears. I like this personal touch and it makes me want to proceed with the game and play another game.<br/>
 
   <u>Expectation:</u>
  As a player, I want to be to select either Rock, Paper, Scissor, Lizard, Spock.<br/>
 
- <u>Result:</u>
+ **Result:**
  As a player, I can easily make a choice by clicking on either of the Rock, Paper, Scissor, Lizard, Spock buttons at the top of the game screen. I can clearly see which I am selecting as the button changes colour when I hover my mouse over it.<br/>
 
-<u>Expectation:</u>
+ **Expectation:**
  As a player, I want to be able to clearly see my score and I want it be updated after each win.<br/>
 
- <u>Result:</u>
+ **Result:**
  As a player, if I win the round my score counter is updated. This is clearly displayed above my most recently selected hand image.<br/>
 
- <u>Expectation:</u>
+ **Expectation:**
  As a player, I want to be able to clearly see the computers score and I want it be updated after each win.<br/>
 
- <u>Result:</u>
+ **Result:**
  As a player, if the computer wins the round, I can see its score counter updated. This is clearly displayed above the computers most recently selected hand image.<br/>
 
-  <u>Expectation:</u>
+ **Expectation:**
  As a player, I want to be able to clearly see who wins each round.<br/>
 
+ **Result:**
+ As a player, I can clearly see who wins each round as message is clearly displayed above the score counter between the two choice images. eg. 'Angela wins the round'.<br/>
 
+ **Expectation:**
+ As a player, I want to be able to see who won the game or if the game was tied, and what the final score was.<br/>
 
- <u>Expectation:</u>
- As a player, I want to be able to clearly see who wins each round.<br/>
+ **Result:**
+ As a player, I can clearly see who won the game and the final score as a 'Game Ended!' Modal appears when the game counter reaches 10. This modal also clearly displays who won or if the game was tied and the score e.g. 'The game is tied 5 - 5' or 'Angela wins game 6 - 4'.<br/>
 
-<u>Expectation:</u>
- As a player,  I want to be able to see who won the game and what the final score is.<br/>
-
- <u>Expectation:</u>
+ **Expectation:**
  As a player, I want to have the choice to either exit the game or play a new game.<br/>
+
+ **Result:**
+ As a player, I can easily play a new game or exit the existing game but clicking on the 'New Game' or 'Exit Game' buttons on the Game Ended Modal. If I click the 'New Game' button, the game window will open, and my name will appear as a message 'New Game Angela!' at the top of the screen, underneath the choice buttons. The Player Score and Computer Score will revert back to zero. If I click the Exist game button, the game homepage will appear.<br/>
+
 
 
 
