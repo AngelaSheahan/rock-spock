@@ -42,7 +42,12 @@ User Stories:
 - As a user, I want to be provided with clear, concise instructions on how to play the game.
 - As a user, I want the homepage of the game to be easy to navigate and eye catching so as to peek my interest to make me actually want to play the game.
 - As a user, I want to be able to easily login to the game.
-- As a user, I want
+- As a user, I want my login name to be captured and used in the game.
+- As a user, I want to be to select either Rock, Paper, Scissor, Lizard, Spock.
+- As a user, I want to be to able to clearly see which hand choice I selected.
+- As a user, I want to be able to clearly see my score and I want it be updated after each win.
+- As a user, I want to be able to clearly see the computers score.
+- As a user, I want to be able to clearly see who wins each round.
 
 
 
