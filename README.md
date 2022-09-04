@@ -159,8 +159,12 @@ Mentor advised to re-write if/else statement in my JavaScript file as a Switch S
 
 The live link can be found here ![]() <br/>
 
-
 ### CITATION OF SOURCES
+- google fonts ![https:/googlefonts.com]
+- Modal CSS and getCookie code sourced from ![w3schools.com]
+- To help make the youtube video on my home page responsive I used ![https://css-tricks.com/fluid-width-video/#aa-iframe-video-youtube-vimeo-etc]
+- Game Logo sourced from ![https://tse4.mm.bing.net/th?id=OIP.pVzZ6nc7Ym9vks9Rw7AGfAHaHa&pid=Api&P=0]
+- Deployment section of my README.MD copied from PP2 Porfolio Project Scope Full Sample README.
 
 ### FUTURE FEATURES
 - Store highest score of the last 5 users of the game in database for player to see.
