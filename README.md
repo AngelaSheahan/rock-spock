@@ -69,7 +69,7 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |Gold Award Modal|This modal pops up when player wins five times.|Player makes their choice by clicking on  btn and wins five times.|Gold Award Modal appears|
 |Game Ended Modal|Game Ended Modal to appear when game counter reaches 10|Player take 10 goes (rounds) in the game by clicking on the game btns|The Game Ended Modal appears on the screen.|
 |The New Game Btn on the Game Ended Modal|The Game screen to appear.<br/> New Game [player name] msg to appear on the game screen.<br/>The score counter for player and computer to be initialised.<br/>The round counter to be initialised.|Player clicks on the New Game btn.|All results were as expected|
-
+|The Exit Game Btn on the Game Ended Modal|The Homepage screen to appear.<br/>The name field will be empty.|Player clicks on the Exit Game btn.|All results were as expected.|
 
 
 
