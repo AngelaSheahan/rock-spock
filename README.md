@@ -31,10 +31,19 @@
 Site Goals:
 - To display the online game, Rock, Paper, Scissors, Lizard, Spock.
 - To display a game that is highly intuitive; meaning the user will easily be able to navigate this game with little instruction and prompt.
+- To capture the players name and use it throughout the game, so as to personalise the player experience. The name is captured by ensuring the player enters their name (in a form field) before they can proceed with the game. The name is stored in a cookie. If the player does not enter their name and clicks on the PLAY button, an error message will appear in the form of a modal. The players name then appears in round winner and game winner messages.
+- To facilitate a player playing against the computer. To do this the creator must code the game so that the computer randomly selects either Rock, Paper, Scissors, Lizard, Spock.
 - To give the player an enjoyable experience by incorporating a fun, awards based feature. This is provided for in the form of the 'award modals', Bronze, Silver, Gold. Each modal displays a trophy colour based on the number of consecutive wins and a snappy, fun message.
 - To provide a quite, snappy game; not too long for the player to lose interest; not too short to demotivate the player. Each game consists of 10 rounds (tied rounds are not included in this number).
-- To clearly display the up-to-date score of the player and the computer, the round winner, and the game winner. Each participants score is clearly displayed above their game logos. The round winner is displayed above the scores eg. 'Computer wins this round'. The game winner is displayed in a modal that pops up after the game has completed 10 rounds. This modal displays that the game has ended, the winner (e.g. 'Angela wins the game 6- 4'), and two buttons (New Game and Exit Game)
+- To clearly display the up-to-date score of the players, the round winner, and the game winner. Each participants (player and computer)score is clearly displayed above their game logos. The round winner is displayed above the scores eg. 'Computer wins this round'. The game winner is displayed in a modal that pops up after the game has completed 10 rounds. This modal displays that the game has ended, the winner & score (e.g. 'Angela wins the game 6- 4'), and two buttons (New Game and Exit Game)
 - To give the player the opportunity to play a new game or exit the game after the game is over. This is clearly provided for in a modal that pops up after game has ended. Player can select either the New Game or the Exit Game button. There is no confusion over which button the player selects, as the button will change colour when the mouse hovers over it.
+- To be game that is responsive to the user; hence it changes in response to the user’s device.<br/>
+User Stories:
+- As a user, I want to be provided with clear, concise instructions on how to play the game.
+- As a user, I want the homepage of the game to be easy to navigate and eye catching so as to peek my interest to make me actually want to play the game.
+- As a user, I want to be able to easily login to the game.
+- As a user, I want
+
 
 
 
