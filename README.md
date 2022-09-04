@@ -47,7 +47,15 @@ User Stories:
 - As a user, I want to be to able to clearly see which hand choice I selected.
 - As a user, I want to be able to clearly see my score and I want it be updated after each win.
 - As a user, I want to be able to clearly see the computers score.
-- As a user, I want to be able to clearly see who wins each round.
+- As a user, I want to be able to clearly see who wins each round.<br/><br/>
+##TESTING
+###Validator Testing
+###CSS
+I used the W3C Validator Service. This test did not find any errors in my CSS!<br/><br/>
+![W3C Validator Result](/assets/images/jigsawValidatorResult.png)<br/><br/>
+###JavaScript<br/>
+I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png<br/><br/>
+
 
 
 
