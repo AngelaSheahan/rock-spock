@@ -86,7 +86,7 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |The Exit Game Btn on the Game Ended Modal|The Homepage screen to appear.<br/>The name field will be empty.|Player clicks on the Exit Game btn.|All results were as expected.|
 
 ### Testing User Stories
- **Expectation:</u>
+ **Expectation:**
  As a player, I want to be provided with clear, concise instructions on how to play the game.<br/>
 
  **Result:**
@@ -107,10 +107,10 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
  **Expectation:**
  As a player, if I am going to give my name I want my login name to be captured and used in the game.<br/>
 
- **Result:</u>
- As a player, after I enter ny name and click on the PLAY button, I see a 'Welcome [player name]!' message appear on the game screen. e.g. 'Welcome Angela!'. Also, when I win a round, the message 'Angela wins this round' appears. In addition, if I win the game, my name is used in the winner messge e.g. 'Angela wins game 7 - 3'. Finally, if I opt to play a new game, the message 'New Game Angela!' appears. I like this personal touch and it makes me want to proceed with the game and play another game.<br/>
+ **Result:**
+ As a player, after I enter my name and click on the PLAY button, I see a 'Welcome [player name]!' message appear on the game screen. e.g. 'Welcome Angela!'. Also, when I win a round, the message 'Angela wins this round' appears. In addition, if I win the game, my name is used in the winner messge e.g. 'Angela wins game 7 - 3'. Finally, if I opt to play a new game, the message 'New Game Angela!' appears. I like this personal touch and it makes me want to proceed with the game and play another game.<br/>
 
-  <u>Expectation:</u>
+ **Expectation:**
  As a player, I want to be to select either Rock, Paper, Scissor, Lizard, Spock.<br/>
 
  **Result:**
