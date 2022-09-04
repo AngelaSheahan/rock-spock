@@ -1,7 +1,7 @@
 # ROCK, PAPER, SCISSORS, LIZARD, SPOCK<br/>
-### <br/>This game was first introduced in the television series, The Big Bang Theory. It is a game of chance, where the player selects one of five hand symbols, Rock, Paper, Scissors, Lizard, Spock. The Computer is then programmed to randomly select one of these hand symbols also. Either the player or the computer wins based on inbuilt rules eg. Rock beats Lizard and Scissors, etc. There are 5 rules displayed on the Homepage of the game. Each game consists of 10 rounds. The winner is the one with the highest score. There is also an inbuilt awards system that only applies to the player. When the player wins 2 rounds in the game he/she is awarded a Bronze trophy, 3 rounds, a Silver trophy and 5 rounds, a Gold trophy. These awards are displayed via modals. When the game is over the player can opt to exit the game or play a new game.
+### <br/>This game was first introduced in the television series, The Big Bang Theory. It is a game of chance, where the player selects one of five hand symbols, Rock, Paper, Scissors, Lizard, Spock. The Computer is then programmed to randomly select one of these hand symbols also. Either the player or the computer wins based on inbuilt rules eg. Rock beats Lizard and Scissors, etc. There are 5 rules displayed on the Homepage of the game. Each game consists of 10 rounds. The winner is the one with the highest score. There is also an inbuilt awards system that only applies to the player. When the player wins 2 rounds consecutively in the game he/she is awarded a Bronze trophy, 3 rounds consecutively, a Silver trophy and 5 rounds consecutively, a Gold trophy. These awards are displayed via modals. When the game is over the player can opt to exit the game or play a new game.
 
-## List of features:
+## FEATURES
 
 ### 1. **Game Introduction Screen/Homepage** <br/>This consists of a:<br/>The Login form<br><br/>![login Screen Part 1](/assets/images/loginsection.png)The Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.<br/><br/>The 'How to Play' section <br/><br/>![How to Play screen](/assets/images/howtoplaysection.png)<br/>This gives a basic overview of the game and the rules on how to determine the round winner.<br/><br/>An embedded YouTube video<br/><br/><br/>![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
 
@@ -27,10 +27,15 @@
 ### **New Game/Exist Game Section**<br/>When the game counter reached 10 rounds (excluding tied rounds), a Modal appears on the screen. The player can click the 'New Game' button or the 'Exit Game' button. <br/><br/>![New Game/Exit Game Modal](/assets/images/selectexitgameonModal.png)<br/><br/> If the player clicks on the New Game button, they jump back to the Game screen where their name is carried forward, and the player and computer scores are initialised.<br/><br/>![New Game screen](/assets/images/newgamescreen.png)<br/><br/> If the player clicks on the Exit Game button, all scores are initialised and the Homepage opens. The name field is cleared for the next players name.<br/><br/>![Exit Game screen](/assets/images/exitgamescreen.png)<br/><br/>
 <br/><br/>
 <br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
+## USER EXPERIENCE/USER INTERFACE<br/>
+Site Goals:
+- To display the online game, Rock, Paper, Scissors, Lizard, Spock.
+- To display a game that is highly intuitive; meaning the user will easily be able to navigate this game with little instruction and prompt.
+- To give the player an enjoyable experience by incorporating a fun, awards based feature. This is provided for in the form of the 'award modals', Bronze, Silver, Gold. Each modal displays a trophy colour based on the number of consecutive wins and a snappy, fun message.
+- To provide a quite, snappy game; not too long for the player to lose interest; not too short to demotivate the player. Each game consists of 10 rounds (tied rounds are not included in this number).
+- To clearly display the up-to-date score of the player and the computer, the round winner, and the game winner. Each participants score is clearly displayed above their game logos. The round winner is displayed above the scores eg. 'Computer wins this round'. The game winner is displayed in a modal that pops up after the game has completed 10 rounds. This modal displays that the game has ended, the winner (e.g. 'Angela wins the game 6- 4'), and two buttons (New Game and Exit Game)
+- To give the player the opportunity to play a new game or exit the game after the game is over. This is clearly provided for in a modal that pops up after game has ended. Player can select either the New Game or the Exit Game button. There is no confusion over which button the player selects, as the button will change colour when the mouse hovers over it.
+
 
 
 
