@@ -37,11 +37,12 @@ Site Goals:
 - To provide a quite, snappy game; not too long for the player to lose interest; not too short to demotivate the player. Each game consists of 10 rounds (tied rounds are not included in this number).
 - To clearly display the up-to-date score of the players, the round winner, and the game winner. Each participants (player and computer)score is clearly displayed above their game logos. The round winner is displayed above the scores eg. 'Computer wins this round'. The game winner is displayed in a modal that pops up after the game has completed 10 rounds. This modal displays that the game has ended, the winner & score (e.g. 'Angela wins the game 6- 4'), and two buttons (New Game and Exit Game)
 - To give the player the opportunity to play a new game or exit the game after the game is over. This is clearly provided for in a modal that pops up after game has ended. Player can select either the New Game or the Exit Game button. There is no confusion over which button the player selects, as the button will change colour when the mouse hovers over it.
-- To be game that is responsive to the user; hence it changes in response to the user’s device.<br/>
-User Stories:
+- To be game that is responsive to the user; hence it changes in response to the user’s device.<br/><br/>
+
+<u>User Stories:</u>
 - As a user, I want to be provided with clear, concise instructions on how to play the game.
 - As a user, I want the homepage of the game to be easy to navigate and eye catching so as to peek my interest to make me actually want to play the game.
-- As a user, I want to be able to easily login to the game.
+- As a user, I want to be able to login to the game without difficulty.
 - As a user, I want my login name to be captured and used in the game.
 - As a user, I want to be to select either Rock, Paper, Scissor, Lizard, Spock.
 - As a user, I want to be to able to clearly see which hand choice I selected.
@@ -56,7 +57,8 @@ I used the Lighthouse Validator to test my HTML.<br/><br/>![Lighthouse Validator
 I used the W3C Validator Service. This test did not find any errors in my CSS!<br/><br/>
 ![W3C Validator Result](/assets/images/jigsawValidatorResult.png)<br/><br/>
 ### JAVASCRIPT<br/>
-I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)<br/>
+I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)<br/><br/>
+
 ### MANUAL TESTING <br>
 |**Features**|**Expect**|**Action**|**Result**|
 |-----|------|-----|--------|
@@ -72,6 +74,37 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |Game Ended Modal|Game Ended Modal to appear when game counter reaches 10|Player take 10 goes (rounds) in the game by clicking on the game btns|The Game Ended Modal appears on the screen.|
 |The New Game Btn on the Game Ended Modal|The Game screen to appear.<br/> New Game [player name] msg to appear on the game screen.<br/>The score counter for player and computer to be initialised.<br/>The round counter to be initialised.|Player clicks on the New Game btn.|All results were as expected|
 |The Exit Game Btn on the Game Ended Modal|The Homepage screen to appear.<br/>The name field will be empty.|Player clicks on the Exit Game btn.|All results were as expected.|
+
+### Testing User Stories
+<u>Expectation:</u>
+ As a player, I want to be provided with clear, concise instructions on how to play the game.<br/>
+
+ <u>Result:</u>
+ As a player, I understand how to play this game as this information is displayed clearly int the 'How to play' section and the 'Rules to determines round winner' table on the homepage of the game.<br/>
+
+ <u>Expectation:</u>
+ As a player, I want the homepage of the game to be easy to navigate and eye catching so as to peek my interest to make me actually want to play the game.<br/>
+ 
+<u>Result:</u>
+ As a player, I can easily navigate the homepage; the content is clear and concise, the page is not overloaded with information and the embedded youtube video is very funny and demonstrate to me how the game is played.<br/>
+
+  <u>Expectation:</u>
+ As a player, I want to be able to login into the game without difficulty.<br/>
+
+ <u>Result:</u>
+ As a player, I can login without difficulty by entering me name and then clicking on the PLAY button. If I do not enter my name and click on the PLAY button, a modal with pop-up to remind me to enter my name before I can proceed with the game.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
