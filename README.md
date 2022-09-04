@@ -43,12 +43,13 @@ Site Goals:
 - As a user, I want to be provided with clear, concise instructions on how to play the game.
 - As a user, I want the homepage of the game to be easy to navigate and eye catching so as to peek my interest to make me actually want to play the game.
 - As a user, I want to be able to login to the game without difficulty.
-- As a user, I want my login name to be captured and used in the game.
+- As a user, I want my login name to be captured and used in the game. Otherwise I would not see the point in having to enter my name.
 - As a user, I want to be to select either Rock, Paper, Scissor, Lizard, Spock.
-- As a user, I want to be to able to clearly see which hand choice I selected.
 - As a user, I want to be able to clearly see my score and I want it be updated after each win.
 - As a user, I want to be able to clearly see the computers score.
-- As a user, I want to be able to clearly see who wins each round.<br/><br/>
+- As a user, I want to be able to clearly see who wins each round.
+- As a user, I want to be able to see who won the game and what their score is.
+- As a user, I want to have the choice to either exit the game or play a new game.<br/><br/>
 ## TESTING
 ### <u>Validator Testing</u>
 ### HTML
@@ -92,14 +93,45 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
  As a player, I want to be able to login into the game without difficulty.<br/>
 
  <u>Result:</u>
- As a player, I can login without difficulty by entering me name and then clicking on the PLAY button. If I do not enter my name and click on the PLAY button, a modal with pop-up to remind me to enter my name before I can proceed with the game.
+ As a player, I can login without difficulty by entering me name and then clicking on the PLAY button. If I do not enter my name and click on the PLAY button, a modal with pop-up to remind me to enter my name before I can proceed with the game.<br/>
+
+ <u>Expectation:</u>
+ As a player, if I am going to give my name I want my login name to be captured and used in the game.<br/>
+
+ <u>Result:</u>
+ As a player, after I enter ny name and click on the PLAY button, I see a 'Welcome [player name]!' message appear on the game screen. e.g. 'Welcome Angela!'. Also, when I win a round, the message 'Angela wins this round' appears. In addition, if I win the game, my name is used in the winner messge e.g. 'Angela wins game 7 - 3'. Finally, if I opt to play a new game, the message 'New Game Angela!' appears. I like this personal touch and it makes me want to proceed with the game and play another game.<br/>
+
+  <u>Expectation:</u>
+ As a player, I want to be to select either Rock, Paper, Scissor, Lizard, Spock.<br/>
+
+ <u>Result:</u>
+ As a player, I can easily make a choice by clicking on either of the Rock, Paper, Scissor, Lizard, Spock buttons at the top of the game screen. I can clearly see which I am selecting as the button changes colour when I hover my mouse over it.<br/>
+
+<u>Expectation:</u>
+ As a player, I want to be able to clearly see my score and I want it be updated after each win.<br/>
+
+ <u>Result:</u>
+ As a player, if I win the round my score counter is updated. This is clearly displayed above my most recently selected hand image.<br/>
+
+ <u>Expectation:</u>
+ As a player, I want to be able to clearly see the computers score and I want it be updated after each win.<br/>
+
+ <u>Result:</u>
+ As a player, if the computer wins the round, I can see its score counter updated. This is clearly displayed above the computers most recently selected hand image.<br/>
+
+  <u>Expectation:</u>
+ As a player, I want to be able to clearly see who wins each round.<br/>
 
 
 
+ <u>Expectation:</u>
+ As a player, I want to be able to clearly see who wins each round.<br/>
 
+<u>Expectation:</u>
+ As a player,  I want to be able to see who won the game and what the final score is.<br/>
 
-
-
+ <u>Expectation:</u>
+ As a player, I want to have the choice to either exit the game or play a new game.<br/>
 
 
 
