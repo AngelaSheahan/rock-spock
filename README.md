@@ -59,7 +59,9 @@ Site Goals:
 - As a user, I want to be able to clearly see who wins each round.
 - As a user, I want to be able to see who won the game and what their score is.
 - As a user, I want to have the choice to either exit the game or play a new game.<br/><br/>
+
 ## TESTING
+- 
 ### <u>Validator Testing</u>
 ### HTML
 I used the Lighthouse Validator to test my HTML.<br/><br/>![Lighthouse Validator results](/assets/images/lighthouseResults.png)<br/><br/>
@@ -148,6 +150,16 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 
 ### UNFIXED BUGS
 There are no unfixed bugs, thank goodness!!
+
+### DESIGN
+
+**Colour Scheme**
+
+
+**Typography**
+
+
+**imagery**
 
 ### LEARNINGS
 Mentor advised to re-write if/else statement in my JavaScript file as a Switch Statement. However on my research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
