@@ -61,14 +61,21 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 
 
 
-### FUTURE DEVELOPMENTS
-
-As a user, I want to be able to see highest score of the last 5 users of the game.
-- Scores will be in the form of how many Bronze, Silver and Gold trophies won.
-- Stores results in cookie created to store player name. Scorebord to be updated after 2 week?
-     - Source Json scorebord code.
-     - Add score code to Cookie.
 
 
 ### LEARNINGS
 - Mentor advised to re-write if/else statement in my JavaScript file as a Switch Statement. However on my research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
+
+### DEPLOYMENT
+
+### CITATION OF SOURCES
+
+### FUTURE FEATURES
+- Store highest score of the last 5 users of the game in database for player to see.
+- Scorebord to be updated after 2 week?
+     - Source Json scorebord code.
+- Option to play against another player instead of the computer.
+- Create a suite of games, commencing with the game, X and 0.
+
+
+
