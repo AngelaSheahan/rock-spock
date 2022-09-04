@@ -60,6 +60,8 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 ### MANUAL TESTING <br>
 |**Features**|**Expect**|**Action**|**Result**|
 |-----|------|-----|--------|
+|Embedded youtube video|Video on game homepage opens and runs correctly|Player clicks on play btn below video..<br/>Player clicks on pause btn below video.|
+|Form PLAY btn|Form submits when player enters nane and the PLAY btn is clicked|Enter player name and click on PLAY btn|Game screen opens.<br/>Welcome [player name] msg appears.|
 |(Enter your name:) Modal| Modal to pop up stating 'Please enter your name'|Clicked PLAY button without entering name|Correct Modal appeared|
 |Game window|Game window to open with 'Welcome[playername]' msg on top| Player name entered in form field and PLAY btn clicked| Game window opened with e.g. Welcome Angela! displayed|
 |Rock, Paper, Scissors, Lizard, Spock btns|A pic of representing player choice to appear under 'Player score' field.<br/>A pic representing the computers random choice to appear under 'Computer score' field.<br/>The winner of this to appear above score field e.g. 'Computer wins this round'.<br/>The winners score to be entered in the score field e.g. 'Computer score: 1.|Click on btn|All results were as expected|
