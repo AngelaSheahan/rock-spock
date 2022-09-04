@@ -3,7 +3,7 @@
 
 ## FEATURES
 
-### 1. **Game Introduction Screen/Homepage** <br/>This consists of a:<br/>The Login form<br><br/>![login Screen Part 1](/assets/images/loginsection.png)The Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.<br/><br/>The 'How to Play' section <br/><br/>![How to Play screen](/assets/images/howtoplaysection.png)<br/>This gives a basic overview of the game and the rules on how to determine the round winner.<br/><br/>An embedded YouTube video<br/><br/><br/>![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
+### 1. **Game Introduction Screen/Homepage** <br/>This consists of a:<br/>The Login form<br><br/>![login Screen Part 1](/assets/images/loginsection.png)<br/><br/>The Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.<br/><br/>The 'How to Play' section <br/><br/>![How to Play screen](/assets/images/howtoplaysection.png)<br/>This gives a basic overview of the game and the rules on how to determine the round winner.<br/><br/>An embedded YouTube video<br/><br/><br/>![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
 
 
 
@@ -64,7 +64,7 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |Game window|Game window to open with 'Welcome[playername]' msg on top| Player name entered in form field and PLAY btn clicked| Game window opened with e.g. Welcome Angela! displayed|
 |Rock, Paper, Scissors, Lizard, Spock btns|A pic of representing player choice to appear under 'Player score' field.<br/>A pic representing the computers random choice to appear under 'Computer score' field.<br/>The winner of this to appear above score field e.g. 'Computer wins this round'.<br/>The winners score to be entered in the score field e.g. 'Computer score: 1.|Click on btn|All results were as expected|
 |Bronze Award Modal|This modal pops up when player wins twice in a row|player selects btn and luckily wins twice in a row|Bronze Award Modal appears|
-|Hand images are the same.<br/>A 'Round is tied' message appears.<br/> The score counter is unchanged.<br/>The Round counter remain unchanged (10 rounds per game)|When player and computer picks the same hand symbol
+|Idenyical hand images.<br/>A 'Round is tied' message.<br/> score counter - unchanged.<br/>The Round counter - unchanged (10 rounds per game)|When player and computer picks the same hand symbol
 
 
 
