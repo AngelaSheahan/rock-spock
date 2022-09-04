@@ -58,6 +58,14 @@ I used the W3C Validator Service. This test did not find any errors in my CSS!<b
 ### JAVASCRIPT<br/>
 I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)<br/>
 ### MANUAL TESTING <br>
+|**Features**|**Expect**|**Action**|**Result**|
+|-----|------|-----|--------|
+|Modal| Modal to pop up stating 'Please enter your name'|Clicked PLAY button without entering name|Correct Modal appeared|
+|Game window|Game window to open with 'Welcome[playername]' msg on top| Player name entered in form field and PLAY btn clicked| Game window opened with e.g. Welcome Angela! displayed|
+|Rock, Paper, Scissors, Lizard, Spock btns|A pic of representing player choice to appear under 'Player score' field.<br/>A pic representing the computers random choice to appear under 'Computer score' field.<br/>The winner of this to appear above score field e.g. 'Computer wins this round'.<br/>The winners score to be entered in the score field e.g. 'Computer score: 1.|Click on btn|All results were as expected|
+|Bronze Award Modal|This modal pops up when player wins twice in a row|player selects btn and luckily wins twice in a row|Bronze Award Modal appears|
+|Hand images are the same.<br/>A 'Round is tied' message appears.<br/> The score counter is unchanged.<br/>The Round counter remain unchanged (10 rounds per game)|When player and computer picks the same hand symbol
+
 
 
 
