@@ -98,11 +98,10 @@ footer {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 5px, 0px;
+  padding: 5px 0px;
 }
 
 .award-body {
-  text-align: center;
   align-items: center;
   vertical-align: middle;
 }
