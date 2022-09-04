@@ -157,7 +157,7 @@ Mentor advised to re-write if/else statement in my JavaScript file as a Switch S
 - From the Source Section drop-down menu, select the Master Branch.
 - Once the Master Branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here
+The live link can be found here ![]() <br/>
 
 
 ### CITATION OF SOURCES
