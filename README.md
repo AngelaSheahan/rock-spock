@@ -3,17 +3,17 @@ This game was first introduced in the television series, The Big Bang Theory. It
 
 ## FEATURES
 
-### 1. **Game Introduction Screen/Homepage** <br/>
+### **Game Introduction Screen/Homepage** <br/>
 This consists of a:<br/>The Login form<br><br/>![login Screen Part 1](/assets/images/loginsection.png)<br/><br/>The Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.<br/><br/>The 'How to Play' section <br/><br/>![How to Play screen](/assets/images/howtoplaysection.png)<br/>This gives a basic overview of the game and the rules on how to determine the round winner.<br/><br/>An embedded YouTube video<br/><br/><br/>![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
 
 
 
 
-### 2. **Error Message (Modal)**<br/>
+### **Error Message (Modal)**<br/>
 If the player does not enter his/her name, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.
 ![No Name Added error message in the form of a Modal](/assets/images/NoNameModal.png)
 
-### 3. **Game Screen**<br/>
+### **Game Screen**<br/>
 This is divided into 3 areas:<br/>
 ### **Player Game Area:**<br/>
 The players' name is carried through to this screen (The player name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice list); in this case the message is, 'Welcome Angela!'.<br/>
@@ -23,14 +23,14 @@ This appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A 
 ![Game Screen section 1](/assets/images/gamescreen1.png)
 ![Game Screen section 2](/assets/images/gamescreen2.png)
 
-### 4. **How to Play**<br/>
+### **How to Play**<br/>
 The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winner rules are displayed on the Homepage) is then updated/increased.<br/><br/>
 ![Player wins screen](/assets/images/playerwins.png)
 ![Computer wins screen](/assets/images/computerwins.png) <br>
 
 Where both the player and the computer pick the same hand symbol, no one wins. The score counter is unchanged, and a 'Round is tied' message appears at the top the screen above the players score. <br/><br/>
 ![Round is tied screen](/assets/images/tiedround.png) </br>
-### **5. The Awards Scheme**<br/> 
+### The Awards Scheme**<br/> 
 When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>![Bronze](/assets/images/bronzewinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.<br/><br/>![Silver](/assets/images/silverwinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Gold award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/><br/>![Gold](/assets/images/goldwinnerModal.png)<br/><br/>
 **New Game/Exist Game Section**<br/>
 When the game counter reached 10 rounds (excluding tied rounds), a Modal appears on the screen. The player can click the 'New Game' button or the 'Exit Game' button. <br/><br/>![New Game/Exit Game Modal](/assets/images/selectexitgameonModal.png)<br/><br/> If the player clicks on the New Game button, they jump back to the Game screen where their name is carried forward, and the player and computer scores are initialised.<br/><br/>![New Game screen](/assets/images/newgamescreen.png)<br/><br/> If the player clicks on the Exit Game button, all scores are initialised and the Homepage opens. The name field is cleared for the next players name.<br/><br/>![Exit Game screen](/assets/images/exitgamescreen.png)<br/><br/>
