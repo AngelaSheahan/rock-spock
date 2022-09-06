@@ -110,7 +110,6 @@ function playGame(playerChoice) {
 
 // See who the winners is.
 function getWinner(playerChoice, computerChoice) {
-    console.log("player choice: ", playerChoice, " computer choice: ", computerChoice);
     if (playerChoice === "Scissors" && (computerChoice == "Paper" || computerChoice == "Lizard")) {
         return "player";
     }
@@ -131,7 +130,6 @@ function getWinner(playerChoice, computerChoice) {
 
 // Update the winners score.
 function updateScore(winner) {
-    console.log("winner : ", winner)
     document.getElementById("messages").textContent = ((winner === "computer") ? "Computer" : getPlayerName()) + " wins this round";
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     document.getElementById(winner + "-score").textContent = score + 1;
@@ -181,7 +179,6 @@ function commonGameReset() {
 }
 
 function checkDisplayAward(winner) {
-    console.log("Check award for " + winner);
     let score = parseInt(document.getElementById(winner + "-score").textContent);
     let awardImageElement = document.getElementById("trophy");
     if (winner === "player" && score == 2) {
