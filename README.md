@@ -152,8 +152,8 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 There are no unfixed bugs, thank goodness!!
 
 ### LEARNINGS
-My Mentor advised me to re-write one of my if/else statement in my JavaScript file as a Switch Statement. However on research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
-I realise also that an Accessibility score of 80% is not good enough! The quality of the images is poor, the homepage is quite 'busy' and the colour contrast is not of the standard required. However my main priority was to get the game working (i.e. to 'nail' the javaScript) and to sort the accessibility issues afterwards. However family committments took precedence and due to time contraints and I having to complete my readme.md, I did not make these necessary changes. If I had made these changes, I would have had to replace all my screenshots! Time was of the essence!
+- My Mentor advised me to re-write one of my if/else statement in my JavaScript file as a Switch Statement. However on research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
+- I realise also that an Accessibility score of 80% is not good enough! The quality of the images is poor, the homepage is quite 'busy' and the colour contrast is not of the standard required. However my main priority was to get the game working (i.e. to 'nail' the javaScript) and to sort the accessibility issues afterwards. However family committments took precedence and due to time contraints and I having to complete my readme.md, I did not make these necessary changes. If I had made these changes, I would have had to replace all my screenshots! Time was of the essence!
 
 ### DEPLOYMENT
 - In the GitHub repository navigate to the settings tab.
