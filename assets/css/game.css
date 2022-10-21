@@ -11,6 +11,22 @@ body {
   background: white;
 }
 
+.login {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.login_and_video {
+  flex: 50%;
+  padding: 0 4px;
+  text-align: left;
+  align-items: left;
+  vertical-align: middle;
+}
+
+
 h1,
 h2,
 h3 {
@@ -32,34 +48,9 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   padding-left: 15px;
-}
-
-
-
-/* table,
-td,
-tr {
-  border: 1px solid black;
-  /* padding-left: 15px;
   text-align: left;
-  text-decoration: none;
-  font-weight: 100; */
-/* } */
-
-/* table {
-*/
-  /* border-collapse: collapse; */
-  width: 50%;
-/* } */
-/* 
-th,
-td {
-  padding: 15px;
 }
 
-th {
-  text-align: left; */
-} */
 
 input[type=text],
 select {
@@ -132,10 +123,18 @@ footer {
   height: 200px;
 }
 
+.intro {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .hand-row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .hand-column {
@@ -222,6 +221,6 @@ footer {
   position: absolute;
   top: 5%;
   left: 5%;
-  width: 90%;
-  height: 90%;
+  width: 20%;
+  height: 20%;
 }

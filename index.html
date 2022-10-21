@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="assets/game.css">
     <title>Rock Spock</title>
-    <script src="assets/game.js"></script>
 </head>
 
 <body onload="onLoad()">
@@ -16,59 +15,61 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
     <section id="login-area">
-        <div>
-            <form name="myform" action="">
-                <label> &emsp;Enter name:
-               <input type="text" id="player" />
+        <form name="myform" action="">
+            <label> &emsp;Enter name:
+                <input type="text" id="player" />
                 <input type="button" value="PLAY" onclick="setPlayerName();" /> </label>
-            </form>
-            <!-- Modal to appear if name not entered before PLAY btn pressed -->
-            <div id="no-name-modal" class="modal">
-                <div class="modal-content">
-                    <span id="no-name-close" class="close">&times;</span>
-                    <p>Please enter your name</p>
-                </div>
+        </form>
+        <!-- <div class="video-wrapper">
+            <iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
+                title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
+        </div> -->
+        <!-- Modal to appear if name not entered before PLAY btn pressed -->
+        <div id="no-name-modal" class="modal">
+            <div class="modal-content">
+                <span id="no-name-close" class="close">&times;</span>
+                <p>Please enter your name</p>
             </div>
         </div>
+
+        <h1>How to play</h1>
+        <p>Enter your name above and click PLAY. You then select one of 5 hand shapes shown below; the
+            computer randomly makes it's choice. The game consists of 10 rounds. A 'tied round' is not
+            included in
+            this count. Whoever wins the most rounds in the game is the Winner!</p>
+        <img id="help-image" src="assets/images/rocpapscilizspo_all.jpg" alt="Rock, Paper, Scissors, Lizard, Spock">
+        <h1>Rules to determines round winner</h1>
         <div>
-            <h1>How to play</h1>
-            <p>Enter your name above and click PLAY. You then select one of 5 hand shapes shown below; the
-                computer randomly makes it's choice. The game consists of 10 rounds. A 'tied round' is not included in this count. Whoever wins the most rounds in the game is the Winner!</p>
-            <img id="help-image" src="assets/images/rocpapscilizspo_all.jpg" alt="Rock, Paper, Scissors, Lizard, Spock">
-            <h1>Rules to determines round winner</h1>
-            <div>
-                <table>
-                    <tr>
-                        <th><b>Rock beats:</b></th>
-                        <th>Lizard and Scissors</th>
-                    </tr>
-                    <tr>
-                        <td><b>Paper beats:</b></td>
-                        <td>Rock and Spock</td>
-                    </tr>
-                    <tr>
-                        <td><b>Scissors beats:</b></td>
-                        <td>Paper and Lizard</td>
-                    </tr>
-                    <tr>
-                        <td><b>Lizard beats:</b></td>
-                        <td>Spock and Paper</td>
-                    </tr>
-                    <tr>
-                        <td><b>Spock beats:</b></td>
-                        <td>Scissors and Rock</td>
-                    </tr>
-                </table>
-            </div>
+            <table>
+                <tr>
+                    <th><b>Rock beats:</b></th>
+                    <th>Lizard and Scissors</th>
+                </tr>
+                <tr>
+                    <td><b>Paper beats:</b></td>
+                    <td>Rock and Spock</td>
+                </tr>
+                <tr>
+                    <td><b>Scissors beats:</b></td>
+                    <td>Paper and Lizard</td>
+                </tr>
+                <tr>
+                    <td><b>Lizard beats:</b></td>
+                    <td>Spock and Paper</td>
+                </tr>
+                <tr>
+                    <td><b>Spock beats:</b></td>
+                    <td>Scissors and Rock</td>
+                </tr>
+            </table>
+        </div>
         </div>
     </section>
     <!-- Embedded youtube video demonstarting how gave works -->
-    <section id="game-banner">
+    <!-- <section id="game-banner">
         <h1>Rock Paper Scissors Lizard Spock from The Big Bang Theory</h1>
-        <div class="video-wrapper">
-            <iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
-                title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
-        </div>
+        <h3> Please make your selection below.</h3> -->
+
     </section>
     <section id="game-area">
         <div class=btn-group>
@@ -87,12 +88,16 @@
                 <img id="player-image" src="assets/images/rocpapscilizspo.png"
                     alt="Rock, Paper, Scissors, Lizard, Spock" class="responsive-hand">
             </div>
+            <div class="items">
+                <button id="exit-game" onclick="exitGame()">Exit Game</button>
+            </div>
             <div class="hand-column">
                 <h3>Computer score: <span id="computer-score">0</span></h3>
                 <img id="computer-image" src="assets/images/rocpapscilizspo.png"
                     alt="Rock, Paper, Scissors, Lizard, Spock" class="responsive-hand">
             </div>
         </div>
+        <!-- </div> -->
         <!-- New game/Exit game Modal -->
         <div id="game-over-new-modal" class="modal">
             <div class="modal-content">
@@ -119,12 +124,11 @@
         </div>
         <div>
             <br>
-            <br>
 
-            <table border="1">
+            <table 2 border="1">
                 <tr>
-                    <th colspan="2">Want to be a champion?</th>
-                    </tr>
+                    <th colspan="2" style="text-align: center">Want to be a Champion?</th>
+                </tr>
                 <tr>
                     <td>Beat the Computer 2 times in a row</td>
                     <td>Bronze Champion</td>
@@ -142,6 +146,7 @@
     </section>
     <footer>
     </footer>
+    <script src="assets/game.js"></script>
 </body>
 
 </html>
