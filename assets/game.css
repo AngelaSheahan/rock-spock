@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap'); */
 
 html {
   min-height: 100%;
@@ -8,7 +8,7 @@ html {
 body {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  background: yellowgreen;
+  background: white;
 }
 
 h1,
@@ -21,25 +21,45 @@ p {
   padding-left: 15px;
 }
 
-table,
-td,
-th {
-  padding-left: 15px;
-  text-align: left;
-  text-decoration: none;
-  font-weight: 100;
-}
 
 table {
-  border-collapse: collapse;
-  width: 100%;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;  
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 15px;
+}
+
+
+
+/* table,
+td,
+tr {
+  border: 1px solid black;
+  /* padding-left: 15px;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 100; */
+/* } */
+
+/* table {
+*/
+  /* border-collapse: collapse; */
+  width: 50%;
+/* } */
+/* 
 th,
 td {
   padding: 15px;
 }
 
+th {
+  text-align: left; */
+} */
 
 input[type=text],
 select {
@@ -56,7 +76,7 @@ select {
 input[type=button] {
   width: 10%;
   background-color: limegreen;
-  color: white;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -108,8 +128,8 @@ footer {
 }
 
 .responsive-hand {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
 }
 
 .hand-row {
