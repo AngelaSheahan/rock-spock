@@ -116,12 +116,24 @@ footer {
   display: flex;
 }
 
-.login-col {
+.login-col-style1 {
   flex: 33%;
+  border: 1px solid black;
   padding: 0 4px;
-  text-align: left;
-  align-items: center;
-  vertical-align: middle;
+}
+
+.login-col-style2 {
+  flex: 33%;
+  border: 1px solid black;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.login-col-style3 {
+  flex: 33%;
+  border: 1px solid black;
+  padding: 0 4px;
+  text-align: center;
 }
 
 .hand-row {
@@ -162,7 +174,7 @@ footer {
   .login-row {
     flex-flow: wrap;
   }
-  
+
   .responsive-hand {
     width: 200px;
     height: 200px;
