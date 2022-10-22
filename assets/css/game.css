@@ -118,20 +118,11 @@ footer {
 
 .login-col-style1 {
   flex: 33%;
-  border: 1px solid black;
   padding: 0 4px;
 }
 
 .login-col-style2 {
   flex: 33%;
-  border: 1px solid black;
-  padding: 0 4px;
-  text-align: center;
-}
-
-.login-col-style3 {
-  flex: 33%;
-  border: 1px solid black;
   padding: 0 4px;
   text-align: center;
 }
