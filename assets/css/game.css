@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
 html {
   min-height: 100%;
@@ -42,14 +42,15 @@ select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid lightgrey;
+  border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 input[type=button] {
-  background-color: limegreen;
+  background-color: yellow;
   color: black;
+  border: 1px solid black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -66,20 +67,19 @@ input[type=submit]:hover {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid green;
+  border: 1px solid black;
 }
 
 button {
   flex-grow: 1;
   flex-basis: auto;
-  background-color: limegreen;
-  border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  border: 1px solid black;
+  /* display: block; */
   font-size: 16px;
+  background-color: yellow;
 }
 
 button:hover {
@@ -125,6 +125,7 @@ footer {
   flex: 33%;
   padding: 0 4px;
   text-align: center;
+  border: ;
 }
 
 .hand-row {
@@ -146,7 +147,9 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 80%;
+  height: 190px;
+
 }
 
 @media screen and (max-width: 600px) {
