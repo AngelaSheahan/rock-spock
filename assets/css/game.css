@@ -11,22 +11,6 @@ body {
   background: white;
 }
 
-.login {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: left;
-}
-
-.login_and_video {
-  flex: 50%;
-  padding: 0 4px;
-  text-align: left;
-  align-items: left;
-  vertical-align: middle;
-}
-
-
 h1,
 h2,
 h3 {
@@ -37,20 +21,20 @@ p {
   padding-left: 15px;
 }
 
-
 table {
   width: 50%;
-  margin-left:auto;
-  margin-right:auto;  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
   padding-left: 15px;
   text-align: left;
 }
-
 
 input[type=text],
 select {
@@ -63,9 +47,7 @@ select {
   box-sizing: border-box;
 }
 
-
 input[type=button] {
-  width: 10%;
   background-color: limegreen;
   color: black;
   padding: 14px 20px;
@@ -130,6 +112,18 @@ footer {
   align-items: center;
 }
 
+.login-row {
+  display: flex;
+}
+
+.login-col {
+  flex: 33%;
+  padding: 0 4px;
+  text-align: left;
+  align-items: center;
+  vertical-align: middle;
+}
+
 .hand-row {
   display: flex;
   flex-flow: row nowrap;
@@ -165,6 +159,10 @@ footer {
     max-width: 100%;
   }
 
+  .login-row {
+    flex-flow: wrap;
+  }
+  
   .responsive-hand {
     width: 200px;
     height: 200px;

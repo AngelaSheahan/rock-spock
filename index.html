@@ -15,14 +15,23 @@
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
     <section id="login-area">
-        <form name="myform" action="">
-            <label> &emsp;Enter name:
-                <input type="text" id="player" />
-                <input type="button" value="PLAY" onclick="setPlayerName();" /> </label>
-        </form>
-        <div class="video-wrapper">
-            <iframe width="545" height="409" src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
-                title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allowfullscreen></iframe>
+        <div class="login-row">
+            <div class="login-col">
+                <p>Enter your name and click PLAY. You then select one of 5 hand shapes shown below; the
+                    computer randomly makes it's choice. The game consists of 10 rounds. A 'tied round' is not
+                    included in this count. Whoever wins the most rounds in the game is the Winner!</p>
+            </div>
+            <div class="login-col">
+                <form name="myform" action="">
+                    <label>NAME:<input type="text" id="player" />
+                        <input type="button" value="PLAY" onclick="setPlayerName();" /></label>
+                </form>
+            </div>
+            <div class="login-col">
+                <!-- Embedded youtube video demonstarting how game works -->
+                <iframe src="https://www.youtube.com/embed/iapcKVn7DdY?rel=0&hd=1"
+                    title="Rock, paper, scissors, lizard, Spock....." frameborder="0" allow="fullscreen"></iframe>
+            </div>
         </div>
         <!-- Modal to appear if name not entered before PLAY btn pressed -->
         <div id="no-name-modal" class="modal">
@@ -31,12 +40,6 @@
                 <p>Please enter your name</p>
             </div>
         </div>
-
-        <h1>How to play</h1>
-        <p>Enter your name above and click PLAY. You then select one of 5 hand shapes shown below; the
-            computer randomly makes it's choice. The game consists of 10 rounds. A 'tied round' is not
-            included in
-            this count. Whoever wins the most rounds in the game is the Winner!</p>
         <img id="help-image" src="assets/images/rocpapscilizspo_all.jpg" alt="Rock, Paper, Scissors, Lizard, Spock">
         <h1>Rules to determines round winner</h1>
         <div>
@@ -63,14 +66,8 @@
                 </tr>
             </table>
         </div>
-        </div>
     </section>
-    <!-- Embedded youtube video demonstarting how game works -->
-    <section id="game-banner">
-        <h1>Rock Paper Scissors Lizard Spock from The Big Bang Theory</h1>
-        <h3> Please make your selection below.</h3>
 
-    </section>
     <section id="game-area">
         <div class=btn-group>
             <button id="rock" aria-label="Rock" data-choice="0" class="controls">ROCK</button>
@@ -147,6 +144,6 @@
     <footer>
     </footer>
     <script src="assets/js/game.js"></script>
-    </body>
+</body>
 
 </html>
