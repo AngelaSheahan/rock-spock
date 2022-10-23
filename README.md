@@ -7,7 +7,7 @@ This game was first introduced in the television series, The Big Bang Theory. It
 ### **SCREEN 1** <br/>![The Game Screen](/assets/images/openingscreen.png)<br/> 
 This screen can be broken down as follows:<br/>
 <br/>
-<u>Login form</u>:<br>The Player enters his/her name in the 'NAME:' form field and clicks on the PLAY button to start a game.<br/>![login Screen Part 1](/assets/images/login.png)<br/><br/><u>The 'TO PLAY' section:</u><br/>This gives a basic overview of the rules of the game.![TO PLAY screen](/assets/images/toplay.png)<br><br/><u>The Hand Symbols graphic:</u><br/> The 5 hand symbols on which the game is based:<br/>![The hand symbols](/assets/images/handsymbols.png)<br/><br/><u>The Rules Table:</u><br/> There is a hierarchy of hand symbols, clearly laid out in the table below.![The rules table](/assets/images/rulestable.png)<br/><br/><u>An embedded YouTube video:</u><br/>The game originated in the 2007 American sitcom, The Big Bang Theory. This video shows a clip of the game in action. ![Big Bang Theory](/assets/images/video.png)<br/>
+<u>Login form</u>:<br>The Player enters his/her name in the 'NAME:' form field and clicks on the PLAY button to start a game.<br/>![login Screen Part 1](/assets/images/login.png)<br/><br/><u>The 'TO PLAY' section:</u><br/>This gives a basic overview of the rules of the game.<br>![TO PLAY screen](/assets/images/toplay.png)<br><br/><u>The Hand Symbols graphic:</u><br/> The 5 hand symbols on which the game is based:<br/>![The hand symbols](/assets/images/handsymbols.png)<br/><br/><u>The Rules Table:</u><br/> There is a hierarchy of hand symbols, clearly laid out in the table below.![The rules table](/assets/images/rulestable.png)<br/><br/><u>An embedded YouTube video:</u><br/>The game originated in the 2007 American sitcom, The Big Bang Theory. This video shows a clip of the game in action. ![Big Bang Theory](/assets/images/video.png)<br/>
 
 
 
@@ -86,8 +86,7 @@ I used the W3C Validator Service to check my HTML. This test initially found 10 
 ### **CSS**
 ![W3C Validator Result](/assets/images/cssvalidatortest.png)<br/>
 ### **JAVASCRIPT**<br/>
-I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)<br/>
-
+I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)
 ### MANUAL TESTING <br>
 |**Features**|**Expect**|**Action**|**Result**|
 |-----|------|-----|--------|
