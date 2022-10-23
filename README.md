@@ -3,32 +3,33 @@ This game was first introduced in the television series, The Big Bang Theory. It
 
 ## FEATURES
 
-### **Game Introduction Screen/Homepage** <br/>
-<br/>Login form:<br>The Player enters his/her name in the 'NAME:' form field and clicks on the PLAY button to start a game.<br/>![login Screen Part 1](/assets/images/login.png)<br/><br/>The 'TO PLAY' section:<br/>This gives a basic overview of the rules of the game.![TO PLAY screen](/assets/images/toplay.png)<br><br/>The Hand Symbols graphic:<br/> The 5 hand symbols on which the game is based:<br/>![The hand symbols](/assets/images/handsymbols.png).<br/>The Rules Table:<br/> There is a hierarchy of hand symbols, clearly laid out in the table below.![The rules table](/assets/images/rulestable.png)<br/><br/>An embedded YouTube video of the game in action:<br/>The game originated in the 2007 American sitcom, The Big Bang Theory. ![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
+### **SCREEN 1** <br/>![The Game Screen](/assets/images/openingscreen.png)<br/> 
+This screen can be broken down as follows:<br/>
+<br/>
+<u>Login form</u>:<br>The Player enters his/her name in the 'NAME:' form field and clicks on the PLAY button to start a game.<br/>![login Screen Part 1](/assets/images/login.png)<br/><br/><u>The 'TO PLAY' section:</u><br/>This gives a basic overview of the rules of the game.![TO PLAY screen](/assets/images/toplay.png)<br><br/><u>The Hand Symbols graphic:</u><br/> The 5 hand symbols on which the game is based:<br/>![The hand symbols](/assets/images/handsymbols.png)<br/><br/><u>The Rules Table:</u><br/> There is a hierarchy of hand symbols, clearly laid out in the table below.![The rules table](/assets/images/rulestable.png)<br/><br/><u>An embedded YouTube video:</u><br/>The game originated in the 2007 American sitcom, The Big Bang Theory. This video shows a clip of the game in action. ![Big Bang Theory](/assets/images/video.png)<br/>
 
 
 
 
-### **Error Message (Modal)**<br/>
-If the player does not enter his/her name, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.
-![No Name Added error message in the form of a Modal](/assets/images/NoNameModal.png)
+<u>Login Error Message (Modal)</u><br/>
+If the player leaves the login form blank, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.<br/><br/>
+![blank login](/assets/images/nonamemodel.png)
 
-### **Game Screen**<br/>
-This is divided into 3 areas:<br/>
-### **Player Game Area:**<br/>
-The players' name is carried through to this screen (The player name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice list); in this case the message is, 'Welcome Angela!'.<br/>
+### **SCREEN 2**<br/>
+![The Game Screen](/assets/images/gamescreen_before_selection.png)
+This is divided into 3 areas:<br/><br/>
+<u>Welcome Message</u><br/>
+The players' name is carried through to this screen (The players name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice buttons); in this case the message is, 'Welcome Angela!'.<br/>
 
-### A Score Counter.<br/>
-This appears on the line below the welcome message eg. 'Player Score: 0'.<br/>A Pictorial Image of the game, *'Rock, Paper, Scissors, Spock'*, appears underneath the welcome message.<br/>**Computer Game Area:**<br/>The player is playing against the computer, so a Computer score counter: 0 is displayed. A pictorial representation of game also appears.<br/>A **List of the game awards system rules**<br/><br/>
-![Game Screen section 1](/assets/images/gamescreen1.png)
-![Game Screen section 2](/assets/images/gamescreen2.png)
+A Score Counter.<br/>
+'Player Score: 0' is displayed. The player score/computer counters is initialised before each new game. This is increased after each round when the player/computer beats the computer/player. There are 10 rounds in a game.<br/><br/>A Pictorial Image of the game:<br/>This appears underneath the score counter.<br/><br/>
 
-### **How to Play**<br/>
-The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winner rules are displayed on the Homepage) is then updated/increased.<br/><br/>
-![Player wins screen](/assets/images/playerwins.png)
-![Computer wins screen](/assets/images/computerwins.png) <br>
+
+### **SCREEN 3**<br/>![First Round](/assets/images/firstchoice.png)
+The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winning rules are displayed in the table before the images) is then updated/increased.<br/><br/>
 
 Where both the player and the computer pick the same hand symbol, no one wins. The score counter is unchanged, and a 'Round is tied' message appears at the top the screen above the players score. <br/><br/>
+### **SCREEN 4**
 ![Round is tied screen](/assets/images/tiedround.png) </br>
 ### The Awards Scheme**<br/> 
 When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>![Bronze](/assets/images/bronzewinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.<br/><br/>![Silver](/assets/images/silverwinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Gold award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/><br/>![Gold](/assets/images/goldwinnerModal.png)<br/><br/>
