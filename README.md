@@ -4,7 +4,7 @@ This game was first introduced in the television series, The Big Bang Theory. It
 ## FEATURES
 
 ### **Game Introduction Screen/Homepage** <br/>
-This consists of a:<br/>The Login form<br><br/>![login Screen Part 1](/assets/images/loginsection.png)<br/><br/>The Player enters his/her name in the 'Enter name:' form field and clicks on the PLAY button to start a game.<br/><br/>The 'How to Play' section <br/><br/>![How to Play screen](/assets/images/howtoplaysection.png)<br/>This gives a basic overview of the game and the rules on how to determine the round winner.<br/><br/>An embedded YouTube video<br/><br/><br/>![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
+<br/>Login form:<br>The Player enters his/her name in the 'NAME:' form field and clicks on the PLAY button to start a game.<br/>![login Screen Part 1](/assets/images/login.png)<br/><br/>The 'TO PLAY' section:<br/>This gives a basic overview of the rules of the game.![TO PLAY screen](/assets/images/toplay.png)<br><br/>The Hand Symbols graphic:<br/> The 5 hand symbols on which the game is based:<br/>![The hand symbols](/assets/images/handsymbols.png).<br/>The Rules Table:<br/> There is a hierarchy of hand symbols, clearly laid out in the table below.![The rules table](/assets/images/rulestable.png)<br/><br/>An embedded YouTube video of the game in action:<br/>The game originated in the 2007 American sitcom, The Big Bang Theory. ![Big Bang Theory](/assets/images/game%20video.png)<br/>A Rock Paper, Scissors, Spock Youtube video from where the game originated, the brillant series, The Big Bang Theory!
 
 
 
