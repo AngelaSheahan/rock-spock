@@ -14,6 +14,7 @@
     <header>
         <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     </header>
+    <!--Login area which includes basic game steps, players name input box and an embedded youtube video-->
     <section id="login-area">
         <div class="login-row">
             <div class="login-col-style1">
@@ -45,9 +46,11 @@
                 <p>Please enter your name</p>
             </div>
         </div>
+        <!-- This image should the different hand symbols in the game-->
         <img id="help-image" src="assets/images/rocpapscilizspo_all.jpg" alt="Rock, Paper, Scissors, Lizard, Spock">
         <br>
         <div>
+            <!-- This table shows the hierarchy of hand symbols-->
             <table>
                 <tr>
                     <td><b>Rock beats</b></td>
@@ -72,9 +75,9 @@
             </table>
         </div>
     </section>
-
     <section id="game-area">
         <div class=btn-group>
+        <!-- The player makes their 'hand choice' by clicking on one of the five buttons below.-->
             <button id="rock" aria-label="Rock" data-choice="0" class="controls">ROCK</button>
             <button id="paper" aria-label="Paper" data-choice="1" class="controls">PAPER</button>
             <button id="scissors" aria-label="Scissors" data-choice="2" class="controls">SCISSORS</button>
@@ -85,6 +88,8 @@
             <h3><span id="messages"></span></h3>
         </div>
         <div class="hand-row">
+        <!-- This div encompasses the player/computers up-to-date score and the image respresenting
+        the player/computers 'hand choice'-->
             <div class="hand-column">
                 <h3>Player score: <span id="player-score">0</span></h3>
                 <img id="player-image" src="assets/images/rocpapscilizspo.png"
@@ -127,6 +132,7 @@
         <div>
             <br>
 
+            <!-- Table detailing the awards, Bronze, Silver, Gold and how they are won-->
             <table 2 border="1">
                 <tr>
                     <th colspan="2" style="text-align: center">Want to be a Champion?</th>
