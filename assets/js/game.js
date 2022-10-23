@@ -195,6 +195,7 @@ function displayAward(awardIndex, awardImage) {
     document.getElementById("award-type").innerHTML = awardType[awardIndex];
     document.getElementById("award-message").innerHTML = awardMessage[awardIndex];
     awardImage.src = `assets/images/${awardType[awardIndex]}.jpg`;
+    awardImage.alt = "${awardType[awardIndex]} trophy image";
     const span = document.getElementById("award-close");
     span.onclick = function () {
         document.getElementById("award-modal").style.display = "none";
