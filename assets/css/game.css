@@ -59,7 +59,7 @@ input[type=button] {
 }
 
 input[type=submit]:hover {
-  background-color: olive;
+  background-color: white;
 }
 
 .btn-group {
@@ -67,7 +67,6 @@ input[type=submit]:hover {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid black;
 }
 
 button {
@@ -76,14 +75,12 @@ button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  border: 1px solid black;
-  /* display: block; */
   font-size: 16px;
   background-color: yellow;
 }
 
 button:hover {
-  background-color: olive;
+  background-color: white;
 }
 
 footer {
@@ -147,9 +144,9 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 190px;
-
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 600px) {
@@ -197,6 +194,7 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  text-align: center;
 }
 
 /* The Close Button */
