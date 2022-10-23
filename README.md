@@ -1,7 +1,8 @@
 # ROCK, PAPER, SCISSORS, LIZARD, SPOCK<br/>
 This game was first introduced in the television series, The Big Bang Theory. It is a game of chance, where the player selects one of five hand symbols, Rock, Paper, Scissors, Lizard, Spock. The Computer is then programmed to randomly select one of these hand symbols also. Either the player or the computer wins based on inbuilt rules eg. Rock beats Lizard and Scissors, etc. There are 5 rules displayed on the Homepage of the game. Each game consists of 10 rounds. The winner is the one with the highest score. There is also an inbuilt awards system that only applies to the player. When the player wins 2 rounds consecutively in the game he/she is awarded a Bronze trophy, 3 rounds consecutively, a Silver trophy and 5 rounds consecutively, a Gold trophy. These awards are displayed via modals. When the game is over the player can opt to exit the game or play a new game.
 
-## FEATURES
+## FEATURES OF GAME
+### THE SCREENS
 
 ### **SCREEN 1** <br/>![The Game Screen](/assets/images/openingscreen.png)<br/> 
 This screen can be broken down as follows:<br/>
@@ -11,38 +12,51 @@ This screen can be broken down as follows:<br/>
 
 
 
-<u>Login Error Message (Modal)</u><br/>
+### **SCREEN 2** <u>Login Error Message (Modal)</u><br/>
 If the player leaves the login form blank, but clicks on the PLAY button, an error message will appear in the form of a modal. The text on the modal window will display "Please enter your name". You can close this modal window but clicking on the 'x' symbol only.<br/><br/>
 ![blank login](/assets/images/nonamemodel.png)
 
-### **SCREEN 2**<br/>
+### **SCREEN 3** - <u>Game area</u><br/>
 ![The Game Screen](/assets/images/gamescreen_before_selection.png)
 This is divided into 3 areas:<br/><br/>
 <u>Welcome Message</u><br/>
 The players' name is carried through to this screen (The players name is stored in a Cookie). A Welcome message appears at the top of the screen (under the choice buttons); in this case the message is, 'Welcome Angela!'.<br/>
 
-A Score Counter.<br/>
-'Player Score: 0' is displayed. The player score/computer counters is initialised before each new game. This is increased after each round when the player/computer beats the computer/player. There are 10 rounds in a game.<br/><br/>A Pictorial Image of the game:<br/>This appears underneath the score counter.<br/><br/>
+<u>A Score Counter</u><br/>
+'Player Score: 0' is displayed. The player score/computer counters is initialised before each new game. This is increased after each round when the player/computer beats the computer/player. There are 10 rounds in a game.<br/><br/>
+<u>A Pictorial Image of the game: </u><br/>This appears underneath the score counter.<br/><br/>
 
 
-### **SCREEN 3**<br/>![First Round](/assets/images/firstchoice.png)
+### **SCREEN 4** - <u>Screen after first round is complete</u><br/>![First Round](/assets/images/firstchoice.png)
 The player selects one of the hand symbols by clicking on it. At the same time, the computer randomly generates a choice of hand symbol also. The score counter of the winner (The winning rules are displayed in the table before the images) is then updated/increased.<br/><br/>
 
 Where both the player and the computer pick the same hand symbol, no one wins. The score counter is unchanged, and a 'Round is tied' message appears at the top the screen above the players score. <br/><br/>
-### **SCREEN 4**
+### **SCREEN 4** - <u>Tied Round Screen</u>
 ![Round is tied screen](/assets/images/tiedround.png) </br>
-### The Awards Scheme**<br/> 
-When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>![Bronze](/assets/images/bronzewinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.<br/><br/>![Silver](/assets/images/silverwinnerModal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Gold award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/><br/>![Gold](/assets/images/goldwinnerModal.png)<br/><br/>
-**New Game/Exist Game Section**<br/>
-When the game counter reached 10 rounds (excluding tied rounds), a Modal appears on the screen. The player can click the 'New Game' button or the 'Exit Game' button. <br/><br/>![New Game/Exit Game Modal](/assets/images/selectexitgameonModal.png)<br/><br/> If the player clicks on the New Game button, they jump back to the Game screen where their name is carried forward, and the player and computer scores are initialised.<br/><br/>![New Game screen](/assets/images/newgamescreen.png)<br/><br/> If the player clicks on the Exit Game button, all scores are initialised and the Homepage opens. The name field is cleared for the next players name.<br/><br/>![Exit Game screen](/assets/images/exitgamescreen.png)<br/><br/>
+### GAME AWARD SCREENS<br/> 
+When the player wins 2 consecutive rounds in the same game, they win a Bronze award. This is displayed in a modal with the snappy caption, 'You Rock'.<br/><br/>
+### **SCREEN 5** - <u>Bronze Champion</u>
+![Bronze](/assets/images/bronzemodal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Silver award. This is displayed in a modal with the snappy caption, 'Your Share a Paper'.
+### **SCREEN 6** - <u>Silver Champion</u>
+![Silver](/assets/images/silvermodal.png)<br/><br/>When the player wins 3 consecutive rounds in the same game, they win a Gold award. This is displayed in a modal with the snappy caption, 'You Cut the Computer to Shreds'.<br/>
+### **SCREEN 7** - <u>Gold Champion</u>![Gold](/assets/images/goldmodal.png)<br/>
+
+### **SCREEN 8** - <u>New Game/Exist Game Section</u><br/>
+When the game counter reached 10 rounds (excluding tied rounds), a Modal appears on the screen. The player can click on either the 'New Game' button or the 'Exit Game' buttons.![New Game/Exit Game Modal](/assets/images/endgame.png)<br/>
+### **SCREEN 9** - <u>New Game Screen</u>
+ If the player clicks on the New Game button, they jump back to the Game screen where their name is carried forward, and the player and computer's scores are initialised.
+ ![Exit Game screen](/assets/images/newgame.png)
+
+### **SCREEN 10** - <u> Exit Game Screen</u>
+If the player clicks on the Exit Game button, all scores are initialised and the Homepage opens. The name field is cleared for the next players name.![New Game screen](/assets/images/exitgame.png)
 <br/><br/>
-<br/><br/>
-## USER EXPERIENCE/USER INTERFACE<br/>
-Site Goals:
+## USER EXPERIENCE/USER INTERFACE
+
+### Site Goals:
 - To display the online game, Rock, Paper, Scissors, Lizard, Spock.
 - To display a game that is highly intuitive; meaning the user will easily be able to navigate this game with little instruction and prompt.
 - To capture the players name and use it throughout the game, so as to personalise the player experience. The name is captured by ensuring the player enters their name (in a form field) before they can proceed with the game. The name is stored in a cookie. If the player does not enter their name and clicks on the PLAY button, an error message will appear in the form of a modal. The players name then appears in round winner and game winner messages.
-- To facilitate a player playing against the computer. To do this the creator must code the game so that the computer randomly selects either Rock, Paper, Scissors, Lizard, Spock.
+- To facilitate a player playing against the computer. To do this the creator must code the game so that the computer randomly selects either Rock, Paper, Scissors, Lizard, or Spock.
 - To give the player an enjoyable experience by incorporating a fun, awards based feature. This is provided for in the form of the 'award modals', Bronze, Silver, Gold. Each modal displays a trophy colour based on the number of consecutive wins and a snappy, fun message.
 - To provide a quite, snappy game; not too long for the player to lose interest; not too short to demotivate the player. Each game consists of 10 rounds (tied rounds are not included in this number).
 - To clearly display the up-to-date score of the players, the round winner, and the game winner. Each participants (player and computer)score is clearly displayed above their game logos. The round winner is displayed above the scores eg. 'Computer wins this round'. The game winner is displayed in a modal that pops up after the game has completed 10 rounds. This modal displays that the game has ended, the winner & score (e.g. 'Angela wins the game 6- 4'), and two buttons (New Game and Exit Game)
@@ -62,15 +76,17 @@ Site Goals:
 - As a user, I want to have the choice to either exit the game or play a new game.<br/><br/>
 
 ## TESTING
-- 
-### <u>Validator Testing</u>
-### HTML
-I used the Lighthouse Validator to test my HTML.<br/><br/>![Lighthouse Validator results](/assets/images/lighthouseResults.png)<br/><br/>
-### CSS
-I used the W3C Validator Service. This test did not find any errors in my CSS!<br/><br/>
-![W3C Validator Result](/assets/images/jigsawValidatorResult.png)<br/><br/>
-### JAVASCRIPT<br/>
-I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)<br/><br/>
+### <u>ACCESSIBILITY</u>
+
+I used the Lighthouse test to check my site accessibility.<br>I achieved an Accessibility score of 100%. <br/>![Lighthouse Validator results](/assets/images/lighthousetest.png)
+### **HTML**
+I used the W3C Validator Service to check my HTML. This test initially found 10 errors in my CSS code! I rectified all these errors! I now have no errors!
+![W3C HTML Validator Result](/assets/images/HTMLvalidator.png)
+<br/>
+### **CSS**
+![W3C Validator Result](/assets/images/cssvalidatortest.png)<br/>
+### **JAVASCRIPT**<br/>
+I ran the JSHint Validator. The results disclosed no error, some metrics, 35 warnings and some unused variables.<br/>![JSHint results Part 1](/assets/images/JSHintResultsPart1.png)<br/>![JSHint results Part 2](/assets/images/JSHintResultsUnusedVariables.png)<br/>
 
 ### MANUAL TESTING <br>
 |**Features**|**Expect**|**Action**|**Result**|
@@ -88,7 +104,7 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 |The New Game Btn on the Game Ended Modal|The Game screen to appear.<br/> New Game [player name] msg to appear on the game screen.<br/>The score counter for player and computer to be initialised.<br/>The round counter to be initialised.|Player clicks on the New Game btn.|All results were as expected|
 |The Exit Game Btn on the Game Ended Modal|The Homepage screen to appear.<br/>The name field will be empty.|Player clicks on the Exit Game btn.|All results were as expected.|
 
-### Testing User Stories
+## Testing User Stories
  **Expectation:**
  As a player, I want to be provided with clear, concise instructions on how to play the game.<br/>
 
@@ -152,25 +168,24 @@ I ran the JSHint Validator. The results disclosed no error, some metrics, 35 war
 ### UNFIXED BUGS
 There are no unfixed bugs, thank goodness!!
 
-### LEARNINGS
+## LEARNINGS
 - My Mentor advised me to re-write one of my if/else statement in my JavaScript file as a Switch Statement. However on research, I discovered that I cannot add multiple conditions as needed in each case, hence I had to leave my if/else statement. This runs correctly, so I am happy!
-- I realise also that an Accessibility score of 80% is not good enough! The quality of the images is poor, the homepage is quite 'busy' and the colour contrast is not of the standard required. However my main priority was to get the game working (i.e. to 'nail' the javaScript) and to sort the accessibility issues afterwards. However family committments took precedence and due to time contraints and I having to complete my readme.md, I did not make these necessary changes. If I had made these changes, I would have had to replace all my screenshots! Time was of the essence!
 
-### DEPLOYMENT
+## DEPLOYMENT
 - In the GitHub repository navigate to the settings tab.
 - From the Source Section drop-down menu, select the Master Branch.
 - Once the Master Branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found here ![]() <br/>
 
-### CITATION OF SOURCES
+## CITATION OF SOURCES
 - google fonts ![https:/googlefonts.com]
 - Modal CSS and getCookie code sourced from ![w3schools.com]
 - To help make the youtube video on my home page responsive I used ![https://css-tricks.com/fluid-width-video/#aa-iframe-video-youtube-vimeo-etc]
 - Game Logo sourced from ![https://tse4.mm.bing.net/th?id=OIP.pVzZ6nc7Ym9vks9Rw7AGfAHaHa&pid=Api&P=0]
 - Deployment section of my README.MD copied from PP2 Porfolio Project Scope Full Sample README.
 
-### FUTURE FEATURES
+## FUTURE FEATURES
 - Store highest score of the last 5 users of the game in database for player to see.
 - Scorebord to be updated after 2 week?
      - Source Json scorebord code.
